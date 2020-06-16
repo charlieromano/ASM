@@ -1,0 +1,3135 @@
+
+out/arquitecturaDeMicroprocesadores.elf:     file format elf32-littlearm
+out/arquitecturaDeMicroprocesadores.elf
+architecture: armv7e-m, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x1a000c59
+
+Program Header:
+0x70000001 off    0x00011354 vaddr 0x1a001354 paddr 0x1a001354 align 2**2
+         filesz 0x00000008 memsz 0x00000008 flags r--
+    LOAD off    0x00010008 vaddr 0x10000008 paddr 0x10000008 align 2**16
+         filesz 0x00000000 memsz 0x0000000c flags rw-
+    LOAD off    0x00010000 vaddr 0x1a000000 paddr 0x1a000000 align 2**16
+         filesz 0x0000135c memsz 0x0000135c flags r-x
+    LOAD off    0x00020000 vaddr 0x10000000 paddr 0x1a00135c align 2**16
+         filesz 0x00000008 memsz 0x00000008 flags rw-
+private flags = 5000400: [Version5 EABI] [hard-float ABI]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00001354  1a000000  1a000000  00010000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000008  10000000  1a00135c  00020000  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .data_RAM2    00000000  10080000  10080000  00020008  2**2
+                  CONTENTS
+  3 .data_RAM3    00000000  20000000  20000000  00020008  2**2
+                  CONTENTS
+  4 .data_RAM4    00000000  20008000  20008000  00020008  2**2
+                  CONTENTS
+  5 .data_RAM5    00000000  2000c000  2000c000  00020008  2**2
+                  CONTENTS
+  6 .bss          0000000c  10000008  10000008  00010008  2**2
+                  ALLOC
+  7 .bss_RAM2     00000000  10080000  10080000  00020008  2**2
+                  CONTENTS
+  8 .bss_RAM3     00000000  20000000  20000000  00020008  2**2
+                  CONTENTS
+  9 .bss_RAM4     00000000  20008000  20008000  00020008  2**2
+                  CONTENTS
+ 10 .bss_RAM5     00000000  2000c000  2000c000  00020008  2**2
+                  CONTENTS
+ 11 .ARM.exidx    00000008  1a001354  1a001354  00011354  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 12 .uninit_RESERVED 00000000  10000000  10000000  00020008  2**2
+                  CONTENTS
+ 13 .noinit_RAM2  00000000  10080000  10080000  00020008  2**2
+                  CONTENTS
+ 14 .noinit_RAM3  00000000  20000000  20000000  00020008  2**2
+                  CONTENTS
+ 15 .noinit_RAM4  00000000  20008000  20008000  00020008  2**2
+                  CONTENTS
+ 16 .noinit_RAM5  00000000  2000c000  2000c000  00020008  2**2
+                  CONTENTS
+ 17 .noinit       00000000  10000014  10000014  00020008  2**2
+                  CONTENTS
+ 18 .debug_info   0000adc0  00000000  00000000  00020008  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 19 .debug_abbrev 00001d95  00000000  00000000  0002adc8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 20 .debug_aranges 000004a8  00000000  00000000  0002cb60  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 21 .debug_ranges 00000458  00000000  00000000  0002d008  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 22 .debug_macro  00007438  00000000  00000000  0002d460  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 23 .debug_line   0000726d  00000000  00000000  00034898  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 24 .debug_str    0001b549  00000000  00000000  0003bb05  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 25 .comment      00000068  00000000  00000000  0005704e  2**0
+                  CONTENTS, READONLY
+ 26 .ARM.attributes 00000032  00000000  00000000  000570b6  2**0
+                  CONTENTS, READONLY
+ 27 .debug_frame  00000a64  00000000  00000000  000570e8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 28 .debug_loc    00003432  00000000  00000000  00057b4c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+1a000000 l    d  .text	00000000 .text
+10000000 l    d  .data	00000000 .data
+10080000 l    d  .data_RAM2	00000000 .data_RAM2
+20000000 l    d  .data_RAM3	00000000 .data_RAM3
+20008000 l    d  .data_RAM4	00000000 .data_RAM4
+2000c000 l    d  .data_RAM5	00000000 .data_RAM5
+10000008 l    d  .bss	00000000 .bss
+10080000 l    d  .bss_RAM2	00000000 .bss_RAM2
+20000000 l    d  .bss_RAM3	00000000 .bss_RAM3
+20008000 l    d  .bss_RAM4	00000000 .bss_RAM4
+2000c000 l    d  .bss_RAM5	00000000 .bss_RAM5
+1a001354 l    d  .ARM.exidx	00000000 .ARM.exidx
+10000000 l    d  .uninit_RESERVED	00000000 .uninit_RESERVED
+10080000 l    d  .noinit_RAM2	00000000 .noinit_RAM2
+20000000 l    d  .noinit_RAM3	00000000 .noinit_RAM3
+20008000 l    d  .noinit_RAM4	00000000 .noinit_RAM4
+2000c000 l    d  .noinit_RAM5	00000000 .noinit_RAM5
+10000014 l    d  .noinit	00000000 .noinit
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    df *ABS*	00000000 cr_startup_lpc43xx.c
+00000000 l    df *ABS*	00000000 crp.c
+00000000 l    df *ABS*	00000000 main.c
+1a000300 l     F .text	0000000c initHardware
+00000000 l    df *ABS*	00000000 avgWindowC.c
+00000000 l    df *ABS*	00000000 uart_18xx_43xx.c
+1a0003ec l     F .text	0000002c Chip_UART_GetIndex
+1a001204 l     O .text	00000008 UART_BClock
+1a00120c l     O .text	00000008 UART_PClock
+00000000 l    df *ABS*	00000000 clock_18xx_43xx.c
+1a000548 l     F .text	000000a0 pll_calc_divs
+1a0005e8 l     F .text	00000100 pll_get_frac
+1a0006e8 l     F .text	0000004c Chip_Clock_FindBaseClock
+1a00095c l     F .text	00000022 Chip_Clock_GetDivRate
+10000008 l     O .bss	00000008 audio_usb_pll_freq
+1a001220 l     O .text	0000006c periph_to_base
+00000000 l    df *ABS*	00000000 sysinit_18xx_43xx.c
+1a00128c l     O .text	00000048 InitClkStates
+00000000 l    df *ABS*	00000000 gpio_18xx_43xx.c
+00000000 l    df *ABS*	00000000 chip_18xx_43xx.c
+00000000 l    df *ABS*	00000000 fpu_init.c
+00000000 l    df *ABS*	00000000 board_sysinit.c
+1a0012d4 l     O .text	0000000c InitClkStates
+1a0012e0 l     O .text	00000060 pinmuxing
+00000000 l    df *ABS*	00000000 board.c
+1a000d84 l     F .text	00000044 Board_LED_Init
+1a001348 l     O .text	0000000c gpioLEDBits
+00000000 l    df *ABS*	00000000 sysinit.c
+00000000 l    df *ABS*	00000000 out/app/src/avgWindowSIMD.o
+00000000 l    df *ABS*	00000000 out/app/src/avgWindowAsm.o
+1a000ee8 l       .text	00000000 Exit
+1a000eca l       .text	00000000 Loop_
+00000000 l    df *ABS*	00000000 _aeabi_uldivmod.o
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 _dvmd_tls.o
+00000000 l    df *ABS*	00000000 memset.c
+1a000780 g     F .text	0000001c Chip_Clock_GetDividerSource
+1a00018a  w    F .text	00000002 TIMER2_IRQHandler
+1a000184  w    F .text	00000002 DebugMon_Handler
+1a00018a  w    F .text	00000002 RIT_IRQHandler
+1a080000 g       *ABS*	00000000 __top_MFlashA512
+1a00018a  w    F .text	00000002 ADCHS_IRQHandler
+1a000114 g       .text	00000000 __section_table_start
+1a00018a  w    F .text	00000002 FLASH_EEPROM_IRQHandler
+1a00018a  w    F .text	00000002 I2C0_IRQHandler
+1a00017a  w    F .text	00000002 HardFault_Handler
+1a000000 g       *ABS*	00000000 __vectors_start__
+1a000188  w    F .text	00000002 SysTick_Handler
+1a00018a  w    F .text	00000002 SDIO_IRQHandler
+1a00018a  w    F .text	00000002 ATIMER_IRQHandler
+1a000186  w    F .text	00000002 PendSV_Handler
+1a000178  w    F .text	00000002 NMI_Handler
+1a00135c g       .ARM.exidx	00000000 __exidx_end
+1a000150 g       .text	00000000 __data_section_table_end
+1a00018a  w    F .text	00000002 I2C1_IRQHandler
+1a00018a  w    F .text	00000002 UART1_IRQHandler
+1a00018a  w    F .text	00000002 GPIO5_IRQHandler
+1a00018a  w    F .text	00000002 CAN1_IRQHandler
+1a00135c g       .ARM.exidx	00000000 _etext
+1a00018a  w    F .text	00000002 USB1_IRQHandler
+1a00018a  w    F .text	00000002 I2S0_IRQHandler
+1a00018a  w    F .text	00000002 TIMER3_IRQHandler
+1a0009fe g     F .text	0000000c Chip_Clock_GetBaseClocktHz
+1a00018a  w    F .text	00000002 UART0_IRQHandler
+1a0001aa g     F .text	00000012 bss_init
+1a00018a  w    F .text	00000002 SGPIO_IRQHandler
+1a000ef0 g     F .text	00000000 .hidden __aeabi_uldivmod
+10000014 g       .noinit	00000000 _noinit
+10000010 g     O .bss	00000004 SystemCoreClock
+1a000418 g     F .text	00000054 Chip_UART_Init
+1a00018a  w    F .text	00000002 ADC0_IRQHandler
+1a000180  w    F .text	00000002 UsageFault_Handler
+1a000a48 g     F .text	0000004c Chip_Clock_GetRate
+1a00018a  w    F .text	00000002 GPIO6_IRQHandler
+1a000d0c g     F .text	0000006c Board_SetupClocking
+20008000 g       *ABS*	00000000 __top_RamAHB32
+1a000f20 g     F .text	000002d0 .hidden __udivmoddi4
+1a001340 g     O .text	00000004 ExtRateIn
+1a00018a  w    F .text	00000002 IntDefaultHandler
+1a000300 g       .text	00000000 __CRP_WORD_END__
+1a00018a  w    F .text	00000002 GPIO1_IRQHandler
+1a00018a  w    F .text	00000002 SSP0_IRQHandler
+1a001354 g       .text	00000000 __exidx_start
+1a0002fc g     O .text	00000004 CRP_WORD
+1a00018a  w    F .text	00000002 ADC1_IRQHandler
+1a000e70 g     F .text	00000028 Board_Init
+1a000114 g       .text	00000000 __data_section_table
+1a00018a  w    F .text	00000002 RTC_IRQHandler
+10000014 g       .bss	00000000 _ebss
+1a00018a  w    F .text	00000002 TIMER0_IRQHandler
+20010000 g       *ABS*	00000000 __top_RamAHB_ETB16
+1a00018a  w    F .text	00000002 SPI_IRQHandler
+1a00018a  w    F .text	00000002 LCD_IRQHandler
+1a000734 g     F .text	0000004c Chip_Clock_EnableCrystal
+10008000 g       *ABS*	00000000 __top_RamLoc32
+1a00018c g     F .text	0000001e data_init
+1a00018a  w    F .text	00000002 TIMER1_IRQHandler
+1a00018a  w    F .text	00000002 UART2_IRQHandler
+1a0008f0 g     F .text	0000006c Chip_Clock_GetMainPLLHz
+1a00018a  w    F .text	00000002 GPIO2_IRQHandler
+1a0009d8 g     F .text	00000026 Chip_Clock_GetBaseClock
+10000008 g       .bss	00000000 _bss
+1a00018a  w    F .text	00000002 I2S1_IRQHandler
+1a000bec g     F .text	00000002 Chip_GPIO_Init
+1a001344 g     O .text	00000004 OscRateIn
+10000014 g       .noinit	00000000 _end_noinit
+10008000 g       *ABS*	00000000 _vStackTop
+1a00018a  w    F .text	00000002 SSP1_IRQHandler
+1a000178 g       .text	00000000 __bss_section_table_end
+1a0011f0  w    F .text	00000002 .hidden __aeabi_ldiv0
+1a00018a  w    F .text	00000002 USB0_IRQHandler
+1a00018a  w    F .text	00000002 GPIO3_IRQHandler
+1a00018a  w    F .text	00000002 SCT_IRQHandler
+1a000ea8 g     F .text	00000000 avgWindowAsm
+1a00079c g     F .text	0000001c Chip_Clock_GetDividerDivisor
+1a0002fc g       .text	00000000 __CRP_WORD_START__
+1a0011f4 g     F .text	00000010 memset
+1a00017c  w    F .text	00000002 MemManage_Handler
+1a00030c g     F .text	000000b4 main
+1a00018a  w    F .text	00000002 WDT_IRQHandler
+2000c000 g       *ABS*	00000000 __top_RamAHB16
+1008a000 g       *ABS*	00000000 __top_RamLoc40
+1a000182  w    F .text	00000002 SVC_Handler
+10000000 g     O .data	00000004 DWT_CTRL
+1a000e58 g     F .text	00000016 Board_LED_Toggle
+1a0003c0 g     F .text	0000002c avgWindowC
+1a00018a  w    F .text	00000002 GPIO7_IRQHandler
+1a000a0c g     F .text	0000003c Chip_Clock_EnableOpts
+1a0007b8 g     F .text	000000b8 Chip_Clock_GetClockInputHz
+1a000c04 g     F .text	00000054 fpuInit
+1a000ea4 g     F .text	00000000 avgWindowSIMD
+1a000e2c g     F .text	0000002c Board_LED_Test
+1a000870 g     F .text	00000080 Chip_Clock_CalcMainPLLValue
+1a000e98 g     F .text	0000000c SystemInit
+1a00018a  w    F .text	00000002 SPIFI_IRQHandler
+1a00018a  w    F .text	00000002 QEI_IRQHandler
+1a000150 g       .text	00000000 __bss_section_table
+1a000cd4 g     F .text	00000038 Board_SetupMuxing
+1a00046c g     F .text	000000dc Chip_UART_SetBaudFDR
+1a00018a  w    F .text	00000002 ETH_IRQHandler
+10000000 g       .uninit_RESERVED	00000000 _end_uninit_RESERVED
+1a00018a  w    F .text	00000002 CAN0_IRQHandler
+10000000 g       .data	00000000 _data
+10000014 g       .bss	00000000 _pvHeapStart
+1a000178 g       .text	00000000 __section_table_end
+1a00018a  w    F .text	00000002 GINT0_IRQHandler
+1a00018a  w    F .text	00000002 DAC_IRQHandler
+1a000ddc g     F .text	00000028 Board_Debug_Init
+10000008 g       .data	00000000 _edata
+1a00018a  w    F .text	00000002 M0SUB_IRQHandler
+1a000a94 g     F .text	00000158 Chip_SetupCoreClock
+1a00018a  w    F .text	00000002 GPIO0_IRQHandler
+1a000000 g     O .text	00000114 g_pfnVectors
+1a000c58 g     F .text	0000007c ResetISR
+1a000bf0 g     F .text	00000014 SystemCoreClockUpdate
+1a00018a  w    F .text	00000002 DMA_IRQHandler
+1a00018a  w    F .text	00000002 EVRT_IRQHandler
+1b080000 g       *ABS*	00000000 __top_MFlashB512
+1a0011f0  w    F .text	00000002 .hidden __aeabi_idiv0
+1a00017e  w    F .text	00000002 BusFault_Handler
+1a00018a  w    F .text	00000002 UART3_IRQHandler
+1a00018a  w    F .text	00000002 MCPWM_IRQHandler
+1a000e04 g     F .text	00000028 Board_LED_Set
+1a00018a  w    F .text	00000002 M0APP_IRQHandler
+1a00018a  w    F .text	00000002 GINT1_IRQHandler
+1a000dc8 g     F .text	00000014 Board_UART_Init
+1a000980 g     F .text	00000058 Chip_Clock_SetBaseClock
+1a00018a  w    F .text	00000002 GPIO4_IRQHandler
+1a000d78 g     F .text	0000000c Board_SystemInit
+10000004 g     O .data	00000004 DWT_CYCCNT
+
+
+
+Disassembly of section .text:
+
+1a000000 <g_pfnVectors>:
+1a000000:	00 80 00 10 59 0c 00 1a 79 01 00 1a 7b 01 00 1a     ....Y...y...{...
+1a000010:	7d 01 00 1a 7f 01 00 1a 81 01 00 1a 00 00 00 00     }...............
+	...
+1a00002c:	83 01 00 1a 85 01 00 1a 00 00 00 00 87 01 00 1a     ................
+1a00003c:	89 01 00 1a 8b 01 00 1a 8b 01 00 1a 8b 01 00 1a     ................
+1a00004c:	00 00 00 00 8b 01 00 1a 8b 01 00 1a 8b 01 00 1a     ................
+1a00005c:	8b 01 00 1a 8b 01 00 1a 8b 01 00 1a 8b 01 00 1a     ................
+1a00006c:	8b 01 00 1a 8b 01 00 1a 8b 01 00 1a 8b 01 00 1a     ................
+1a00007c:	8b 01 00 1a 8b 01 00 1a 8b 01 00 1a 8b 01 00 1a     ................
+1a00008c:	8b 01 00 1a 8b 01 00 1a 8b 01 00 1a 8b 01 00 1a     ................
+1a00009c:	8b 01 00 1a 8b 01 00 1a 8b 01 00 1a 8b 01 00 1a     ................
+1a0000ac:	8b 01 00 1a 8b 01 00 1a 8b 01 00 1a 8b 01 00 1a     ................
+1a0000bc:	8b 01 00 1a 8b 01 00 1a 8b 01 00 1a 8b 01 00 1a     ................
+1a0000cc:	8b 01 00 1a 8b 01 00 1a 8b 01 00 1a 8b 01 00 1a     ................
+1a0000dc:	8b 01 00 1a 8b 01 00 1a 8b 01 00 1a 8b 01 00 1a     ................
+1a0000ec:	8b 01 00 1a 00 00 00 00 8b 01 00 1a 8b 01 00 1a     ................
+1a0000fc:	8b 01 00 1a 00 00 00 00 8b 01 00 1a 8b 01 00 1a     ................
+1a00010c:	8b 01 00 1a 8b 01 00 1a                             ........
+
+1a000114 <__data_section_table>:
+1a000114:	1a00135c 	.word	0x1a00135c
+1a000118:	10000000 	.word	0x10000000
+1a00011c:	00000008 	.word	0x00000008
+1a000120:	1a00135c 	.word	0x1a00135c
+1a000124:	10080000 	.word	0x10080000
+1a000128:	00000000 	.word	0x00000000
+1a00012c:	1a00135c 	.word	0x1a00135c
+1a000130:	20000000 	.word	0x20000000
+1a000134:	00000000 	.word	0x00000000
+1a000138:	1a00135c 	.word	0x1a00135c
+1a00013c:	20008000 	.word	0x20008000
+1a000140:	00000000 	.word	0x00000000
+1a000144:	1a00135c 	.word	0x1a00135c
+1a000148:	2000c000 	.word	0x2000c000
+1a00014c:	00000000 	.word	0x00000000
+
+1a000150 <__bss_section_table>:
+1a000150:	10000008 	.word	0x10000008
+1a000154:	0000000c 	.word	0x0000000c
+1a000158:	10080000 	.word	0x10080000
+1a00015c:	00000000 	.word	0x00000000
+1a000160:	20000000 	.word	0x20000000
+1a000164:	00000000 	.word	0x00000000
+1a000168:	20008000 	.word	0x20008000
+1a00016c:	00000000 	.word	0x00000000
+1a000170:	2000c000 	.word	0x2000c000
+1a000174:	00000000 	.word	0x00000000
+
+1a000178 <NMI_Handler>:
+// handler routines in your application code.
+//*****************************************************************************
+__attribute__ ((section(".after_vectors")))
+void NMI_Handler(void) {
+    while (1) {
+    }
+1a000178:	e7fe      	b.n	1a000178 <NMI_Handler>
+
+1a00017a <HardFault_Handler>:
+}
+__attribute__ ((section(".after_vectors")))
+void HardFault_Handler(void) {
+    while (1) {
+    }
+1a00017a:	e7fe      	b.n	1a00017a <HardFault_Handler>
+
+1a00017c <MemManage_Handler>:
+}
+__attribute__ ((section(".after_vectors")))
+void MemManage_Handler(void) {
+    while (1) {
+    }
+1a00017c:	e7fe      	b.n	1a00017c <MemManage_Handler>
+
+1a00017e <BusFault_Handler>:
+}
+__attribute__ ((section(".after_vectors")))
+void BusFault_Handler(void) {
+    while (1) {
+    }
+1a00017e:	e7fe      	b.n	1a00017e <BusFault_Handler>
+
+1a000180 <UsageFault_Handler>:
+}
+__attribute__ ((section(".after_vectors")))
+void UsageFault_Handler(void) {
+    while (1) {
+    }
+1a000180:	e7fe      	b.n	1a000180 <UsageFault_Handler>
+
+1a000182 <SVC_Handler>:
+}
+__attribute__ ((section(".after_vectors")))
+void SVC_Handler(void) {
+    while (1) {
+    }
+1a000182:	e7fe      	b.n	1a000182 <SVC_Handler>
+
+1a000184 <DebugMon_Handler>:
+}
+__attribute__ ((section(".after_vectors")))
+void DebugMon_Handler(void) {
+    while (1) {
+    }
+1a000184:	e7fe      	b.n	1a000184 <DebugMon_Handler>
+
+1a000186 <PendSV_Handler>:
+}
+__attribute__ ((section(".after_vectors")))
+void PendSV_Handler(void) {
+    while (1) {
+    }
+1a000186:	e7fe      	b.n	1a000186 <PendSV_Handler>
+
+1a000188 <SysTick_Handler>:
+}
+__attribute__ ((section(".after_vectors")))
+void SysTick_Handler(void) {
+    while (1) {
+    }
+1a000188:	e7fe      	b.n	1a000188 <SysTick_Handler>
+
+1a00018a <ADC0_IRQHandler>:
+//
+//*****************************************************************************
+__attribute__ ((section(".after_vectors")))
+void IntDefaultHandler(void) {
+    while (1) {
+    }
+1a00018a:	e7fe      	b.n	1a00018a <ADC0_IRQHandler>
+
+1a00018c <data_init>:
+    for (loop = 0; loop < len; loop = loop + 4)
+1a00018c:	2300      	movs	r3, #0
+1a00018e:	4293      	cmp	r3, r2
+1a000190:	d20a      	bcs.n	1a0001a8 <data_init+0x1c>
+void data_init(unsigned int romstart, unsigned int start, unsigned int len) {
+1a000192:	b410      	push	{r4}
+        *pulDest++ = *pulSrc++;
+1a000194:	f850 4b04 	ldr.w	r4, [r0], #4
+1a000198:	f841 4b04 	str.w	r4, [r1], #4
+    for (loop = 0; loop < len; loop = loop + 4)
+1a00019c:	3304      	adds	r3, #4
+1a00019e:	4293      	cmp	r3, r2
+1a0001a0:	d3f8      	bcc.n	1a000194 <data_init+0x8>
+}
+1a0001a2:	f85d 4b04 	ldr.w	r4, [sp], #4
+1a0001a6:	4770      	bx	lr
+1a0001a8:	4770      	bx	lr
+
+1a0001aa <bss_init>:
+    for (loop = 0; loop < len; loop = loop + 4)
+1a0001aa:	2300      	movs	r3, #0
+1a0001ac:	428b      	cmp	r3, r1
+1a0001ae:	d204      	bcs.n	1a0001ba <bss_init+0x10>
+        *pulDest++ = 0;
+1a0001b0:	2200      	movs	r2, #0
+1a0001b2:	f840 2b04 	str.w	r2, [r0], #4
+    for (loop = 0; loop < len; loop = loop + 4)
+1a0001b6:	3304      	adds	r3, #4
+1a0001b8:	e7f8      	b.n	1a0001ac <bss_init+0x2>
+}
+1a0001ba:	4770      	bx	lr
+1a0001bc:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001c0:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001c4:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001c8:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001cc:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001d0:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001d4:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001d8:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001dc:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001e0:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001e4:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001e8:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001ec:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001f0:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001f4:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001f8:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0001fc:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000200:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000204:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000208:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a00020c:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000210:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000214:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000218:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a00021c:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000220:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000224:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000228:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a00022c:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000230:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000234:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000238:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a00023c:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000240:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000244:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000248:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a00024c:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000250:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000254:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000258:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a00025c:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000260:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000264:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000268:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a00026c:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000270:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000274:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000278:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a00027c:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000280:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000284:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000288:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a00028c:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000290:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000294:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a000298:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a00029c:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002a0:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002a4:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002a8:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002ac:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002b0:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002b4:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002b8:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002bc:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002c0:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002c4:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002c8:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002cc:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002d0:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002d4:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002d8:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002dc:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002e0:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002e4:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002e8:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002ec:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002f0:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002f4:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+1a0002f8:	ffff ffff 			; <UNDEFINED> instruction: 0xffffffff
+
+1a0002fc <CRP_WORD>:
+1a0002fc:	ffff ffff                                   ....
+
+1a000300 <initHardware>:
+/*==================[external data definition]===============================*/
+
+/*==================[internal functions definition]==========================*/
+
+static void initHardware(void)
+{
+1a000300:	b508      	push	{r3, lr}
+	Board_Init();
+1a000302:	f000 fdb5 	bl	1a000e70 <Board_Init>
+	SystemCoreClockUpdate();
+1a000306:	f000 fc73 	bl	1a000bf0 <SystemCoreClockUpdate>
+	//SysTick_Config(SystemCoreClock / 1000);
+}
+1a00030a:	bd08      	pop	{r3, pc}
+
+1a00030c <main>:
+
+/*==================[external functions definition]==========================*/
+
+int main(void)
+{
+1a00030c:	b530      	push	{r4, r5, lr}
+1a00030e:	b0c5      	sub	sp, #276	; 0x114
+	volatile uint32_t cyclesC=0,cyclesAsm=0,cyclesSIMD=0;
+1a000310:	2400      	movs	r4, #0
+1a000312:	9443      	str	r4, [sp, #268]	; 0x10c
+1a000314:	9442      	str	r4, [sp, #264]	; 0x108
+1a000316:	9441      	str	r4, [sp, #260]	; 0x104
+	volatile int32_t resultC=0,resultAsm=0,resultSIMD=0, i;
+1a000318:	9440      	str	r4, [sp, #256]	; 0x100
+1a00031a:	943f      	str	r4, [sp, #252]	; 0xfc
+1a00031c:	943e      	str	r4, [sp, #248]	; 0xf8
+	uint16_t func[ARRAY_SIZE];
+	uint8_t n_samples=24,delta_samples=4;
+	volatile uint16_t resultados[2]={0,0};
+1a00031e:	f8ad 4000 	strh.w	r4, [sp]
+1a000322:	f8ad 4002 	strh.w	r4, [sp, #2]
+
+	initHardware();
+1a000326:	f7ff ffeb 	bl	1a000300 <initHardware>
+
+    /* Se inicializa el array func con valores de 0 a ARRAY_SIZE */
+	for(i=0;i<ARRAY_SIZE;i++)
+1a00032a:	943d      	str	r4, [sp, #244]	; 0xf4
+1a00032c:	e007      	b.n	1a00033e <main+0x32>
+		func[i]=i;
+1a00032e:	993d      	ldr	r1, [sp, #244]	; 0xf4
+1a000330:	9a3d      	ldr	r2, [sp, #244]	; 0xf4
+1a000332:	ab01      	add	r3, sp, #4
+1a000334:	f823 1012 	strh.w	r1, [r3, r2, lsl #1]
+	for(i=0;i<ARRAY_SIZE;i++)
+1a000338:	9b3d      	ldr	r3, [sp, #244]	; 0xf4
+1a00033a:	3301      	adds	r3, #1
+1a00033c:	933d      	str	r3, [sp, #244]	; 0xf4
+1a00033e:	9b3d      	ldr	r3, [sp, #244]	; 0xf4
+1a000340:	2b77      	cmp	r3, #119	; 0x77
+1a000342:	ddf4      	ble.n	1a00032e <main+0x22>
+
+	*DWT_CTRL  |= 1;
+1a000344:	4b1c      	ldr	r3, [pc, #112]	; (1a0003b8 <main+0xac>)
+1a000346:	681a      	ldr	r2, [r3, #0]
+1a000348:	6813      	ldr	r3, [r2, #0]
+1a00034a:	f043 0301 	orr.w	r3, r3, #1
+1a00034e:	6013      	str	r3, [r2, #0]
+
+	*DWT_CYCCNT = 0;
+1a000350:	4c1a      	ldr	r4, [pc, #104]	; (1a0003bc <main+0xb0>)
+1a000352:	6823      	ldr	r3, [r4, #0]
+1a000354:	2500      	movs	r5, #0
+1a000356:	601d      	str	r5, [r3, #0]
+	resultC=avgWindowC (func, ARRAY_SIZE, n_samples, delta_samples);
+1a000358:	2304      	movs	r3, #4
+1a00035a:	2218      	movs	r2, #24
+1a00035c:	2178      	movs	r1, #120	; 0x78
+1a00035e:	eb0d 0003 	add.w	r0, sp, r3
+1a000362:	f000 f82d 	bl	1a0003c0 <avgWindowC>
+1a000366:	9040      	str	r0, [sp, #256]	; 0x100
+	cyclesC=*DWT_CYCCNT;
+1a000368:	6822      	ldr	r2, [r4, #0]
+1a00036a:	6813      	ldr	r3, [r2, #0]
+1a00036c:	9343      	str	r3, [sp, #268]	; 0x10c
+
+	resultados[0]= resultC;
+1a00036e:	9b40      	ldr	r3, [sp, #256]	; 0x100
+1a000370:	b29b      	uxth	r3, r3
+1a000372:	f8ad 3000 	strh.w	r3, [sp]
+
+	*DWT_CYCCNT = 0;
+1a000376:	6015      	str	r5, [r2, #0]
+	resultAsm=avgWindowAsm (func, ARRAY_SIZE, n_samples, delta_samples);
+1a000378:	2304      	movs	r3, #4
+1a00037a:	2218      	movs	r2, #24
+1a00037c:	2178      	movs	r1, #120	; 0x78
+1a00037e:	eb0d 0003 	add.w	r0, sp, r3
+1a000382:	f000 fd91 	bl	1a000ea8 <avgWindowAsm>
+1a000386:	903f      	str	r0, [sp, #252]	; 0xfc
+	cyclesAsm=*DWT_CYCCNT;
+1a000388:	6822      	ldr	r2, [r4, #0]
+1a00038a:	6813      	ldr	r3, [r2, #0]
+1a00038c:	9342      	str	r3, [sp, #264]	; 0x108
+
+	resultados[1]= resultAsm;
+1a00038e:	9b3f      	ldr	r3, [sp, #252]	; 0xfc
+1a000390:	b29b      	uxth	r3, r3
+1a000392:	f8ad 3002 	strh.w	r3, [sp, #2]
+
+	*DWT_CYCCNT = 0;
+1a000396:	6015      	str	r5, [r2, #0]
+	resultSIMD=avgWindowSIMD (func, ARRAY_SIZE, n_samples, delta_samples);
+1a000398:	2304      	movs	r3, #4
+1a00039a:	2218      	movs	r2, #24
+1a00039c:	2178      	movs	r1, #120	; 0x78
+1a00039e:	eb0d 0003 	add.w	r0, sp, r3
+1a0003a2:	f000 fd7f 	bl	1a000ea4 <avgWindowSIMD>
+1a0003a6:	903e      	str	r0, [sp, #248]	; 0xf8
+	cyclesSIMD=*DWT_CYCCNT;
+1a0003a8:	6823      	ldr	r3, [r4, #0]
+1a0003aa:	681b      	ldr	r3, [r3, #0]
+1a0003ac:	9341      	str	r3, [sp, #260]	; 0x104
+
+	while (1)
+	{
+		Board_LED_Toggle(LED);
+1a0003ae:	2000      	movs	r0, #0
+1a0003b0:	f000 fd52 	bl	1a000e58 <Board_LED_Toggle>
+    Wait For Interrupt is a hint instruction that suspends execution
+    until one of a number of events occurs.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __WFI(void)
+{
+  __ASM volatile ("wfi");
+1a0003b4:	bf30      	wfi
+1a0003b6:	e7fa      	b.n	1a0003ae <main+0xa2>
+1a0003b8:	10000000 	.word	0x10000000
+1a0003bc:	10000004 	.word	0x10000004
+
+1a0003c0 <avgWindowC>:
+ *      Author: fsl
+ */
+#include "../inc/window.h"
+
+uint16_t avgWindowC (int16_t *func1, uint8_t size, uint8_t n_samples, uint8_t delta_samples)
+{
+1a0003c0:	b430      	push	{r4, r5}
+	if(delta_samples+n_samples>size)
+1a0003c2:	189c      	adds	r4, r3, r2
+1a0003c4:	428c      	cmp	r4, r1
+1a0003c6:	dc0f      	bgt.n	1a0003e8 <avgWindowC+0x28>
+		return 0;
+	uint32_t accum=0;
+	uint16_t avg=0;
+
+	for(uint8_t i=0; i< n_samples; i++){
+1a0003c8:	2100      	movs	r1, #0
+	uint32_t accum=0;
+1a0003ca:	460c      	mov	r4, r1
+	for(uint8_t i=0; i< n_samples; i++){
+1a0003cc:	4291      	cmp	r1, r2
+1a0003ce:	d206      	bcs.n	1a0003de <avgWindowC+0x1e>
+		accum += func1[delta_samples + i];
+1a0003d0:	18cd      	adds	r5, r1, r3
+1a0003d2:	f930 5015 	ldrsh.w	r5, [r0, r5, lsl #1]
+1a0003d6:	442c      	add	r4, r5
+	for(uint8_t i=0; i< n_samples; i++){
+1a0003d8:	3101      	adds	r1, #1
+1a0003da:	b2c9      	uxtb	r1, r1
+1a0003dc:	e7f6      	b.n	1a0003cc <avgWindowC+0xc>
+		if(accum>4294967295)
+			accum=4294967295;
+	}
+	avg = (uint16_t)accum/n_samples;
+1a0003de:	b2a4      	uxth	r4, r4
+1a0003e0:	fb94 f0f2 	sdiv	r0, r4, r2
+
+	if(avg>65535)
+		avg=65535;
+	return avg;
+
+}
+1a0003e4:	bc30      	pop	{r4, r5}
+1a0003e6:	4770      	bx	lr
+		return 0;
+1a0003e8:	2000      	movs	r0, #0
+1a0003ea:	e7fb      	b.n	1a0003e4 <avgWindowC+0x24>
+
+1a0003ec <Chip_UART_GetIndex>:
+
+/* Returns clock index for the peripheral block */
+static int Chip_UART_GetIndex(LPC_USART_T *pUART)
+{
+   uint32_t base = (uint32_t) pUART;
+   switch(base) {
+1a0003ec:	4b09      	ldr	r3, [pc, #36]	; (1a000414 <Chip_UART_GetIndex+0x28>)
+1a0003ee:	4298      	cmp	r0, r3
+1a0003f0:	d009      	beq.n	1a000406 <Chip_UART_GetIndex+0x1a>
+1a0003f2:	f503 5380 	add.w	r3, r3, #4096	; 0x1000
+1a0003f6:	4298      	cmp	r0, r3
+1a0003f8:	d007      	beq.n	1a00040a <Chip_UART_GetIndex+0x1e>
+1a0003fa:	f5a3 2380 	sub.w	r3, r3, #262144	; 0x40000
+1a0003fe:	4298      	cmp	r0, r3
+1a000400:	d005      	beq.n	1a00040e <Chip_UART_GetIndex+0x22>
+       case LPC_USART0_BASE:
+           return 0;
+1a000402:	2000      	movs	r0, #0
+1a000404:	4770      	bx	lr
+       case LPC_UART1_BASE:
+           return 1;
+       case LPC_USART2_BASE:
+           return 2;
+1a000406:	2002      	movs	r0, #2
+1a000408:	4770      	bx	lr
+       case LPC_USART3_BASE:
+           return 3;
+1a00040a:	2003      	movs	r0, #3
+1a00040c:	4770      	bx	lr
+           return 1;
+1a00040e:	2001      	movs	r0, #1
+       default:
+           return 0; /* Should never come here */
+   }
+}
+1a000410:	4770      	bx	lr
+1a000412:	bf00      	nop
+1a000414:	400c1000 	.word	0x400c1000
+
+1a000418 <Chip_UART_Init>:
+ * Public functions
+ ****************************************************************************/
+
+/* Initializes the pUART peripheral */
+void Chip_UART_Init(LPC_USART_T *pUART)
+{
+1a000418:	b530      	push	{r4, r5, lr}
+1a00041a:	b083      	sub	sp, #12
+1a00041c:	4604      	mov	r4, r0
+    volatile uint32_t tmp;
+
+   /* Enable UART clocking. UART base clock(s) must already be enabled */
+   Chip_Clock_EnableOpts(UART_PClock[Chip_UART_GetIndex(pUART)], true, true, 1);
+1a00041e:	f7ff ffe5 	bl	1a0003ec <Chip_UART_GetIndex>
+1a000422:	2301      	movs	r3, #1
+1a000424:	461a      	mov	r2, r3
+1a000426:	4619      	mov	r1, r3
+1a000428:	4d0e      	ldr	r5, [pc, #56]	; (1a000464 <Chip_UART_Init+0x4c>)
+1a00042a:	f835 0010 	ldrh.w	r0, [r5, r0, lsl #1]
+1a00042e:	f000 faed 	bl	1a000a0c <Chip_Clock_EnableOpts>
+ *         with a RX trip level of 8 characters, use something like
+ *         (UART_FCR_FIFO_EN | UART_FCR_TRG_LEV2)
+ */
+STATIC INLINE void Chip_UART_SetupFIFOS(LPC_USART_T *pUART, uint32_t fcr)
+{
+   pUART->FCR = fcr;
+1a000432:	2307      	movs	r3, #7
+1a000434:	60a3      	str	r3, [r4, #8]
+    pUART->TER2 = 0;
+1a000436:	2300      	movs	r3, #0
+1a000438:	65e3      	str	r3, [r4, #92]	; 0x5c
+
+    /* Disable Tx */
+    Chip_UART_TXDisable(pUART);
+
+    /* Disable interrupts */
+   pUART->IER = 0;
+1a00043a:	6063      	str	r3, [r4, #4]
+   /* Set LCR to default state */
+   pUART->LCR = 0;
+1a00043c:	60e3      	str	r3, [r4, #12]
+   /* Set ACR to default state */
+   pUART->ACR = 0;
+1a00043e:	6223      	str	r3, [r4, #32]
+    /* Set RS485 control to default state */
+   pUART->RS485CTRL = 0;
+1a000440:	64e3      	str	r3, [r4, #76]	; 0x4c
+   /* Set RS485 delay timer to default state */
+   pUART->RS485DLY = 0;
+1a000442:	6563      	str	r3, [r4, #84]	; 0x54
+   /* Set RS485 addr match to default state */
+   pUART->RS485ADRMATCH = 0;
+1a000444:	6523      	str	r3, [r4, #80]	; 0x50
+
+    /* Clear MCR */
+    if (pUART == LPC_UART1) {
+1a000446:	4b08      	ldr	r3, [pc, #32]	; (1a000468 <Chip_UART_Init+0x50>)
+1a000448:	429c      	cmp	r4, r3
+1a00044a:	d005      	beq.n	1a000458 <Chip_UART_Init+0x40>
+ *         stop bit, and even (enabled) parity would be
+ *         (UART_LCR_WLEN8 | UART_LCR_SBS_1BIT | UART_LCR_PARITY_EN | UART_LCR_PARITY_EVEN)
+ */
+STATIC INLINE void Chip_UART_ConfigData(LPC_USART_T *pUART, uint32_t config)
+{
+   pUART->LCR = config;
+1a00044c:	2303      	movs	r3, #3
+1a00044e:	60e3      	str	r3, [r4, #12]
+
+   /* Default 8N1, with DLAB disabled */
+   Chip_UART_ConfigData(pUART, (UART_LCR_WLEN8 | UART_LCR_SBS_1BIT | UART_LCR_PARITY_DIS));
+
+   /* Disable fractional divider */
+   pUART->FDR = 0x10;
+1a000450:	2310      	movs	r3, #16
+1a000452:	62a3      	str	r3, [r4, #40]	; 0x28
+}
+1a000454:	b003      	add	sp, #12
+1a000456:	bd30      	pop	{r4, r5, pc}
+       pUART->MCR = 0;
+1a000458:	2300      	movs	r3, #0
+1a00045a:	6123      	str	r3, [r4, #16]
+       tmp = pUART->MSR;
+1a00045c:	69a3      	ldr	r3, [r4, #24]
+1a00045e:	9301      	str	r3, [sp, #4]
+1a000460:	e7f4      	b.n	1a00044c <Chip_UART_Init+0x34>
+1a000462:	bf00      	nop
+1a000464:	1a00120c 	.word	0x1a00120c
+1a000468:	40082000 	.word	0x40082000
+
+1a00046c <Chip_UART_SetBaudFDR>:
+    Chip_UART_ABIntHandler(pUART);
+}
+
+/* Determines and sets best dividers to get a target baud rate */
+uint32_t Chip_UART_SetBaudFDR(LPC_USART_T *pUART, uint32_t baud)
+{
+1a00046c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+1a000470:	b083      	sub	sp, #12
+1a000472:	9001      	str	r0, [sp, #4]
+1a000474:	4688      	mov	r8, r1
+   uint32_t sdiv = 0, sm = 1, sd = 0;
+   uint32_t pclk, m, d;
+   uint32_t odiff = -1UL; /* old best diff */
+
+   /* Get base clock for the corresponding UART */
+   pclk = Chip_Clock_GetRate(UART_BClock[Chip_UART_GetIndex(pUART)]);
+1a000476:	f7ff ffb9 	bl	1a0003ec <Chip_UART_GetIndex>
+1a00047a:	4b32      	ldr	r3, [pc, #200]	; (1a000544 <Chip_UART_SetBaudFDR+0xd8>)
+1a00047c:	f833 0010 	ldrh.w	r0, [r3, r0, lsl #1]
+1a000480:	f000 fae2 	bl	1a000a48 <Chip_Clock_GetRate>
+1a000484:	4606      	mov	r6, r0
+   uint32_t odiff = -1UL; /* old best diff */
+1a000486:	f04f 37ff 	mov.w	r7, #4294967295	; 0xffffffff
+
+   /* Loop through all possible fractional divider values */
+   for (m = 1; odiff && m < 16; m++) {
+1a00048a:	2401      	movs	r4, #1
+   uint32_t sdiv = 0, sm = 1, sd = 0;
+1a00048c:	f04f 0b00 	mov.w	fp, #0
+1a000490:	46a2      	mov	sl, r4
+1a000492:	46d9      	mov	r9, fp
+   for (m = 1; odiff && m < 16; m++) {
+1a000494:	e02a      	b.n	1a0004ec <Chip_UART_SetBaudFDR+0x80>
+           /* Upper 32-bit of dval has div */
+           div = (uint32_t) (dval >> 32);
+
+           /* Closer to next div */
+           if ((int)diff < 0) {
+               diff = -diff;
+1a000496:	4242      	negs	r2, r0
+               div ++;
+1a000498:	1c4b      	adds	r3, r1, #1
+1a00049a:	e017      	b.n	1a0004cc <Chip_UART_SetBaudFDR+0x60>
+           sd = d;
+           sm = m;
+           odiff = diff;
+
+           /* On perfect match, break loop */
+           if(!diff) {
+1a00049c:	b30a      	cbz	r2, 1a0004e2 <Chip_UART_SetBaudFDR+0x76>
+           odiff = diff;
+1a00049e:	4617      	mov	r7, r2
+           sd = d;
+1a0004a0:	46ab      	mov	fp, r5
+           sm = m;
+1a0004a2:	46a2      	mov	sl, r4
+           sdiv = div;
+1a0004a4:	4699      	mov	r9, r3
+       for (d = 0; d < m; d++) {
+1a0004a6:	3501      	adds	r5, #1
+1a0004a8:	42ac      	cmp	r4, r5
+1a0004aa:	d91e      	bls.n	1a0004ea <Chip_UART_SetBaudFDR+0x7e>
+           uint64_t dval = (((uint64_t) pclk << 28) * m) / (baud * (m + d));
+1a0004ac:	0933      	lsrs	r3, r6, #4
+1a0004ae:	0730      	lsls	r0, r6, #28
+1a0004b0:	fba4 0100 	umull	r0, r1, r4, r0
+1a0004b4:	fb04 1103 	mla	r1, r4, r3, r1
+1a0004b8:	1962      	adds	r2, r4, r5
+1a0004ba:	fb08 f202 	mul.w	r2, r8, r2
+1a0004be:	2300      	movs	r3, #0
+1a0004c0:	f000 fd16 	bl	1a000ef0 <__aeabi_uldivmod>
+           diff = (uint32_t) dval;
+1a0004c4:	4602      	mov	r2, r0
+           div = (uint32_t) (dval >> 32);
+1a0004c6:	460b      	mov	r3, r1
+           if ((int)diff < 0) {
+1a0004c8:	2800      	cmp	r0, #0
+1a0004ca:	dbe4      	blt.n	1a000496 <Chip_UART_SetBaudFDR+0x2a>
+           if (odiff < diff || !div || (div >> 16) || (div < 3 && d)) {
+1a0004cc:	4297      	cmp	r7, r2
+1a0004ce:	d3ea      	bcc.n	1a0004a6 <Chip_UART_SetBaudFDR+0x3a>
+1a0004d0:	2b00      	cmp	r3, #0
+1a0004d2:	d0e8      	beq.n	1a0004a6 <Chip_UART_SetBaudFDR+0x3a>
+1a0004d4:	0c19      	lsrs	r1, r3, #16
+1a0004d6:	d1e6      	bne.n	1a0004a6 <Chip_UART_SetBaudFDR+0x3a>
+1a0004d8:	2b02      	cmp	r3, #2
+1a0004da:	d8df      	bhi.n	1a00049c <Chip_UART_SetBaudFDR+0x30>
+1a0004dc:	2d00      	cmp	r5, #0
+1a0004de:	d0dd      	beq.n	1a00049c <Chip_UART_SetBaudFDR+0x30>
+1a0004e0:	e7e1      	b.n	1a0004a6 <Chip_UART_SetBaudFDR+0x3a>
+           odiff = diff;
+1a0004e2:	4617      	mov	r7, r2
+           sd = d;
+1a0004e4:	46ab      	mov	fp, r5
+           sm = m;
+1a0004e6:	46a2      	mov	sl, r4
+           sdiv = div;
+1a0004e8:	4699      	mov	r9, r3
+   for (m = 1; odiff && m < 16; m++) {
+1a0004ea:	3401      	adds	r4, #1
+1a0004ec:	b11f      	cbz	r7, 1a0004f6 <Chip_UART_SetBaudFDR+0x8a>
+1a0004ee:	2c0f      	cmp	r4, #15
+1a0004f0:	d801      	bhi.n	1a0004f6 <Chip_UART_SetBaudFDR+0x8a>
+       for (d = 0; d < m; d++) {
+1a0004f2:	2500      	movs	r5, #0
+1a0004f4:	e7d8      	b.n	1a0004a8 <Chip_UART_SetBaudFDR+0x3c>
+           }
+       }
+   }
+
+   /* Return 0 if a vaild divisor is not possible */
+   if (!sdiv) {
+1a0004f6:	f1b9 0f00 	cmp.w	r9, #0
+1a0004fa:	d01e      	beq.n	1a00053a <Chip_UART_SetBaudFDR+0xce>
+ * @param  pUART   : Pointer to selected UART peripheral
+ * @return Nothing
+ */
+STATIC INLINE void Chip_UART_EnableDivisorAccess(LPC_USART_T *pUART)
+{
+   pUART->LCR |= UART_LCR_DLAB_EN;
+1a0004fc:	9a01      	ldr	r2, [sp, #4]
+1a0004fe:	4611      	mov	r1, r2
+1a000500:	68d3      	ldr	r3, [r2, #12]
+1a000502:	f043 0380 	orr.w	r3, r3, #128	; 0x80
+1a000506:	60d3      	str	r3, [r2, #12]
+ *         order to access the USART Divisor Latches. This function
+ *         doesn't alter the DLAB state.
+ */
+STATIC INLINE void Chip_UART_SetDivisorLatches(LPC_USART_T *pUART, uint8_t dll, uint8_t dlm)
+{
+   pUART->DLL = (uint32_t) dll;
+1a000508:	fa5f f389 	uxtb.w	r3, r9
+1a00050c:	6013      	str	r3, [r2, #0]
+   pUART->DLM = (uint32_t) dlm;
+1a00050e:	f3c9 2307 	ubfx	r3, r9, #8, #8
+1a000512:	6053      	str	r3, [r2, #4]
+   pUART->LCR &= ~UART_LCR_DLAB_EN;
+1a000514:	68d3      	ldr	r3, [r2, #12]
+1a000516:	f023 0380 	bic.w	r3, r3, #128	; 0x80
+1a00051a:	60d3      	str	r3, [r2, #12]
+   Chip_UART_EnableDivisorAccess(pUART);
+   Chip_UART_SetDivisorLatches(pUART, UART_LOAD_DLL(sdiv), UART_LOAD_DLM(sdiv));
+   Chip_UART_DisableDivisorAccess(pUART);
+
+   /* Set best fractional divider */
+   pUART->FDR = (UART_FDR_MULVAL(sm) | UART_FDR_DIVADDVAL(sd));
+1a00051c:	ea4f 130a 	mov.w	r3, sl, lsl #4
+1a000520:	b2db      	uxtb	r3, r3
+1a000522:	f00b 020f 	and.w	r2, fp, #15
+1a000526:	4313      	orrs	r3, r2
+1a000528:	628b      	str	r3, [r1, #40]	; 0x28
+
+   /* Return actual baud rate */
+   return (pclk >> 4) * sm / (sdiv * (sm + sd));
+1a00052a:	0933      	lsrs	r3, r6, #4
+1a00052c:	fb0a f303 	mul.w	r3, sl, r3
+1a000530:	44da      	add	sl, fp
+1a000532:	fb09 f90a 	mul.w	r9, r9, sl
+1a000536:	fbb3 f9f9 	udiv	r9, r3, r9
+}
+1a00053a:	4648      	mov	r0, r9
+1a00053c:	b003      	add	sp, #12
+1a00053e:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+1a000542:	bf00      	nop
+1a000544:	1a001204 	.word	0x1a001204
+
+1a000548 <pll_calc_divs>:
+       return -val;
+   return val;
+}
+
+static void pll_calc_divs(uint32_t freq, PLL_PARAM_T *ppll)
+{
+1a000548:	b4f0      	push	{r4, r5, r6, r7}
+
+   uint32_t prev = freq;
+   int n, m, p;
+
+   /* When direct mode is set FBSEL should be a don't care */
+   if (ppll->ctrl & (1 << 7)) {
+1a00054a:	680b      	ldr	r3, [r1, #0]
+1a00054c:	f013 0f80 	tst.w	r3, #128	; 0x80
+1a000550:	d002      	beq.n	1a000558 <pll_calc_divs+0x10>
+       ppll->ctrl &= ~(1 << 6);
+1a000552:	f023 0340 	bic.w	r3, r3, #64	; 0x40
+1a000556:	600b      	str	r3, [r1, #0]
+   }
+   for (n = 1; n <= 4; n++) {
+       for (p = 0; p < 4; p ++) {
+1a000558:	4607      	mov	r7, r0
+1a00055a:	2501      	movs	r5, #1
+1a00055c:	e03a      	b.n	1a0005d4 <pll_calc_divs+0x8c>
+           for (m = 1; m <= 256; m++) {
+               uint32_t fcco, fout;
+               if (ppll->ctrl & (1 << 6)) {
+                   fcco = ((m << (p + 1)) * ppll->fin) / n;
+               } else {
+                   fcco = (m * ppll->fin) / n;
+1a00055e:	694b      	ldr	r3, [r1, #20]
+1a000560:	fb03 f302 	mul.w	r3, r3, r2
+1a000564:	fbb3 f3f5 	udiv	r3, r3, r5
+1a000568:	e01c      	b.n	1a0005a4 <pll_calc_divs+0x5c>
+               }
+               if (fcco < PLL_MIN_CCO_FREQ) continue;
+               if (fcco > PLL_MAX_CCO_FREQ) break;
+               if (ppll->ctrl & (1 << 7)) {
+                   fout = fcco;
+1a00056a:	461c      	mov	r4, r3
+   if (val < 0)
+1a00056c:	ebb0 0c04 	subs.w	ip, r0, r4
+1a000570:	d427      	bmi.n	1a0005c2 <pll_calc_divs+0x7a>
+               } else {
+                   fout = fcco >> (p + 1);
+               }
+
+               if (ABS(freq - fout) < prev) {
+1a000572:	4567      	cmp	r7, ip
+1a000574:	d906      	bls.n	1a000584 <pll_calc_divs+0x3c>
+                   ppll->nsel = n;
+1a000576:	608d      	str	r5, [r1, #8]
+                   ppll->psel = p + 1;
+1a000578:	1c77      	adds	r7, r6, #1
+1a00057a:	60cf      	str	r7, [r1, #12]
+                   ppll->msel = m;
+1a00057c:	610a      	str	r2, [r1, #16]
+                   ppll->fout = fout;
+1a00057e:	618c      	str	r4, [r1, #24]
+                   ppll->fcco = fcco;
+1a000580:	61cb      	str	r3, [r1, #28]
+                   prev = ABS(freq - fout);
+1a000582:	4667      	mov	r7, ip
+           for (m = 1; m <= 256; m++) {
+1a000584:	3201      	adds	r2, #1
+1a000586:	f5b2 7f80 	cmp.w	r2, #256	; 0x100
+1a00058a:	dc1d      	bgt.n	1a0005c8 <pll_calc_divs+0x80>
+               if (ppll->ctrl & (1 << 6)) {
+1a00058c:	680c      	ldr	r4, [r1, #0]
+1a00058e:	f014 0f40 	tst.w	r4, #64	; 0x40
+1a000592:	d0e4      	beq.n	1a00055e <pll_calc_divs+0x16>
+                   fcco = ((m << (p + 1)) * ppll->fin) / n;
+1a000594:	1c73      	adds	r3, r6, #1
+1a000596:	fa02 fc03 	lsl.w	ip, r2, r3
+1a00059a:	694b      	ldr	r3, [r1, #20]
+1a00059c:	fb03 f30c 	mul.w	r3, r3, ip
+1a0005a0:	fbb3 f3f5 	udiv	r3, r3, r5
+               if (fcco < PLL_MIN_CCO_FREQ) continue;
+1a0005a4:	f8df c038 	ldr.w	ip, [pc, #56]	; 1a0005e0 <pll_calc_divs+0x98>
+1a0005a8:	4563      	cmp	r3, ip
+1a0005aa:	d9eb      	bls.n	1a000584 <pll_calc_divs+0x3c>
+               if (fcco > PLL_MAX_CCO_FREQ) break;
+1a0005ac:	f8df c034 	ldr.w	ip, [pc, #52]	; 1a0005e4 <pll_calc_divs+0x9c>
+1a0005b0:	4563      	cmp	r3, ip
+1a0005b2:	d809      	bhi.n	1a0005c8 <pll_calc_divs+0x80>
+               if (ppll->ctrl & (1 << 7)) {
+1a0005b4:	f014 0f80 	tst.w	r4, #128	; 0x80
+1a0005b8:	d1d7      	bne.n	1a00056a <pll_calc_divs+0x22>
+                   fout = fcco >> (p + 1);
+1a0005ba:	1c74      	adds	r4, r6, #1
+1a0005bc:	fa23 f404 	lsr.w	r4, r3, r4
+1a0005c0:	e7d4      	b.n	1a00056c <pll_calc_divs+0x24>
+       return -val;
+1a0005c2:	f1cc 0c00 	rsb	ip, ip, #0
+1a0005c6:	e7d4      	b.n	1a000572 <pll_calc_divs+0x2a>
+       for (p = 0; p < 4; p ++) {
+1a0005c8:	3601      	adds	r6, #1
+1a0005ca:	2e03      	cmp	r6, #3
+1a0005cc:	dc01      	bgt.n	1a0005d2 <pll_calc_divs+0x8a>
+           for (m = 1; m <= 256; m++) {
+1a0005ce:	2201      	movs	r2, #1
+1a0005d0:	e7d9      	b.n	1a000586 <pll_calc_divs+0x3e>
+   for (n = 1; n <= 4; n++) {
+1a0005d2:	3501      	adds	r5, #1
+1a0005d4:	2d04      	cmp	r5, #4
+1a0005d6:	dc01      	bgt.n	1a0005dc <pll_calc_divs+0x94>
+       for (p = 0; p < 4; p ++) {
+1a0005d8:	2600      	movs	r6, #0
+1a0005da:	e7f6      	b.n	1a0005ca <pll_calc_divs+0x82>
+               }
+           }
+       }
+   }
+}
+1a0005dc:	bcf0      	pop	{r4, r5, r6, r7}
+1a0005de:	4770      	bx	lr
+1a0005e0:	094c5eff 	.word	0x094c5eff
+1a0005e4:	1312d000 	.word	0x1312d000
+
+1a0005e8 <pll_get_frac>:
+
+static void pll_get_frac(uint32_t freq, PLL_PARAM_T *ppll)
+{
+1a0005e8:	b5f0      	push	{r4, r5, r6, r7, lr}
+1a0005ea:	b099      	sub	sp, #100	; 0x64
+1a0005ec:	4605      	mov	r5, r0
+1a0005ee:	460c      	mov	r4, r1
+   int diff[3];
+   PLL_PARAM_T pll[3] = {{0},{0},{0}};
+1a0005f0:	225c      	movs	r2, #92	; 0x5c
+1a0005f2:	2100      	movs	r1, #0
+1a0005f4:	a801      	add	r0, sp, #4
+1a0005f6:	f000 fdfd 	bl	1a0011f4 <memset>
+
+   /* Try direct mode */
+   pll[0].ctrl |= (1 << 7);
+1a0005fa:	2380      	movs	r3, #128	; 0x80
+1a0005fc:	9300      	str	r3, [sp, #0]
+   pll[0].fin = ppll->fin;
+1a0005fe:	6963      	ldr	r3, [r4, #20]
+1a000600:	9305      	str	r3, [sp, #20]
+   pll[0].srcin = ppll->srcin;
+1a000602:	7923      	ldrb	r3, [r4, #4]
+1a000604:	f88d 3004 	strb.w	r3, [sp, #4]
+   pll_calc_divs(freq, &pll[0]);
+1a000608:	4669      	mov	r1, sp
+1a00060a:	4628      	mov	r0, r5
+1a00060c:	f7ff ff9c 	bl	1a000548 <pll_calc_divs>
+   if (pll[0].fout == freq) {
+1a000610:	9b06      	ldr	r3, [sp, #24]
+1a000612:	42ab      	cmp	r3, r5
+1a000614:	d02f      	beq.n	1a000676 <pll_get_frac+0x8e>
+   if (val < 0)
+1a000616:	1aeb      	subs	r3, r5, r3
+1a000618:	d436      	bmi.n	1a000688 <pll_get_frac+0xa0>
+       *ppll = pll[0];
+       return ;
+   }
+   diff[0] = ABS(freq - pll[0].fout);
+1a00061a:	461e      	mov	r6, r3
+
+   /* Try non-Integer mode */
+   pll[2].ctrl = (1 << 6);
+1a00061c:	2340      	movs	r3, #64	; 0x40
+1a00061e:	9310      	str	r3, [sp, #64]	; 0x40
+   pll[2].fin = ppll->fin;
+1a000620:	6963      	ldr	r3, [r4, #20]
+1a000622:	9315      	str	r3, [sp, #84]	; 0x54
+   pll[2].srcin = ppll->srcin;
+1a000624:	7923      	ldrb	r3, [r4, #4]
+1a000626:	f88d 3044 	strb.w	r3, [sp, #68]	; 0x44
+   pll_calc_divs(freq, &pll[2]);
+1a00062a:	a910      	add	r1, sp, #64	; 0x40
+1a00062c:	4628      	mov	r0, r5
+1a00062e:	f7ff ff8b 	bl	1a000548 <pll_calc_divs>
+   if (pll[2].fout == freq) {
+1a000632:	9b16      	ldr	r3, [sp, #88]	; 0x58
+1a000634:	42ab      	cmp	r3, r5
+1a000636:	d029      	beq.n	1a00068c <pll_get_frac+0xa4>
+   if (val < 0)
+1a000638:	1aeb      	subs	r3, r5, r3
+1a00063a:	d42f      	bmi.n	1a00069c <pll_get_frac+0xb4>
+       *ppll = pll[2];
+       return ;
+   }
+
+   diff[2] = ABS(freq - pll[2].fout);
+1a00063c:	461f      	mov	r7, r3
+   /* Try integer mode */
+   pll[1].ctrl = (1 << 6);
+1a00063e:	2340      	movs	r3, #64	; 0x40
+1a000640:	9308      	str	r3, [sp, #32]
+   pll[1].fin = ppll->fin;
+1a000642:	6963      	ldr	r3, [r4, #20]
+1a000644:	930d      	str	r3, [sp, #52]	; 0x34
+   pll[1].srcin = ppll->srcin;
+1a000646:	7923      	ldrb	r3, [r4, #4]
+1a000648:	f88d 3024 	strb.w	r3, [sp, #36]	; 0x24
+   pll_calc_divs(freq, &pll[1]);
+1a00064c:	a908      	add	r1, sp, #32
+1a00064e:	4628      	mov	r0, r5
+1a000650:	f7ff ff7a 	bl	1a000548 <pll_calc_divs>
+   if (pll[1].fout == freq) {
+1a000654:	9b0e      	ldr	r3, [sp, #56]	; 0x38
+1a000656:	42ab      	cmp	r3, r5
+1a000658:	d022      	beq.n	1a0006a0 <pll_get_frac+0xb8>
+   if (val < 0)
+1a00065a:	1aed      	subs	r5, r5, r3
+1a00065c:	d428      	bmi.n	1a0006b0 <pll_get_frac+0xc8>
+       return ;
+   }
+   diff[1] = ABS(freq - pll[1].fout);
+
+   /* Find the min of 3 and return */
+   if (diff[0] <= diff[1]) {
+1a00065e:	42ae      	cmp	r6, r5
+1a000660:	dc30      	bgt.n	1a0006c4 <pll_get_frac+0xdc>
+       if (diff[0] <= diff[2]) {
+1a000662:	42be      	cmp	r6, r7
+1a000664:	dc26      	bgt.n	1a0006b4 <pll_get_frac+0xcc>
+           *ppll = pll[0];
+1a000666:	466d      	mov	r5, sp
+1a000668:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+1a00066a:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+1a00066c:	e895 000f 	ldmia.w	r5, {r0, r1, r2, r3}
+1a000670:	e884 000f 	stmia.w	r4, {r0, r1, r2, r3}
+1a000674:	e006      	b.n	1a000684 <pll_get_frac+0x9c>
+       *ppll = pll[0];
+1a000676:	466d      	mov	r5, sp
+1a000678:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+1a00067a:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+1a00067c:	e895 000f 	ldmia.w	r5, {r0, r1, r2, r3}
+1a000680:	e884 000f 	stmia.w	r4, {r0, r1, r2, r3}
+           *ppll = pll[1];
+       } else {
+           *ppll = pll[2];
+       }
+   }
+}
+1a000684:	b019      	add	sp, #100	; 0x64
+1a000686:	bdf0      	pop	{r4, r5, r6, r7, pc}
+       return -val;
+1a000688:	425b      	negs	r3, r3
+1a00068a:	e7c6      	b.n	1a00061a <pll_get_frac+0x32>
+       *ppll = pll[2];
+1a00068c:	ad10      	add	r5, sp, #64	; 0x40
+1a00068e:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+1a000690:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+1a000692:	e895 000f 	ldmia.w	r5, {r0, r1, r2, r3}
+1a000696:	e884 000f 	stmia.w	r4, {r0, r1, r2, r3}
+       return ;
+1a00069a:	e7f3      	b.n	1a000684 <pll_get_frac+0x9c>
+       return -val;
+1a00069c:	425b      	negs	r3, r3
+1a00069e:	e7cd      	b.n	1a00063c <pll_get_frac+0x54>
+       *ppll = pll[1];
+1a0006a0:	ad08      	add	r5, sp, #32
+1a0006a2:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+1a0006a4:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+1a0006a6:	e895 000f 	ldmia.w	r5, {r0, r1, r2, r3}
+1a0006aa:	e884 000f 	stmia.w	r4, {r0, r1, r2, r3}
+       return ;
+1a0006ae:	e7e9      	b.n	1a000684 <pll_get_frac+0x9c>
+       return -val;
+1a0006b0:	426d      	negs	r5, r5
+1a0006b2:	e7d4      	b.n	1a00065e <pll_get_frac+0x76>
+           *ppll = pll[2];
+1a0006b4:	ad10      	add	r5, sp, #64	; 0x40
+1a0006b6:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+1a0006b8:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+1a0006ba:	e895 000f 	ldmia.w	r5, {r0, r1, r2, r3}
+1a0006be:	e884 000f 	stmia.w	r4, {r0, r1, r2, r3}
+1a0006c2:	e7df      	b.n	1a000684 <pll_get_frac+0x9c>
+       if (diff[1] <= diff[2]) {
+1a0006c4:	42af      	cmp	r7, r5
+1a0006c6:	db07      	blt.n	1a0006d8 <pll_get_frac+0xf0>
+           *ppll = pll[1];
+1a0006c8:	ad08      	add	r5, sp, #32
+1a0006ca:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+1a0006cc:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+1a0006ce:	e895 000f 	ldmia.w	r5, {r0, r1, r2, r3}
+1a0006d2:	e884 000f 	stmia.w	r4, {r0, r1, r2, r3}
+1a0006d6:	e7d5      	b.n	1a000684 <pll_get_frac+0x9c>
+           *ppll = pll[2];
+1a0006d8:	ad10      	add	r5, sp, #64	; 0x40
+1a0006da:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+1a0006dc:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+1a0006de:	e895 000f 	ldmia.w	r5, {r0, r1, r2, r3}
+1a0006e2:	e884 000f 	stmia.w	r4, {r0, r1, r2, r3}
+1a0006e6:	e7cd      	b.n	1a000684 <pll_get_frac+0x9c>
+
+1a0006e8 <Chip_Clock_FindBaseClock>:
+   return Chip_Clock_GetClockInputHz(input) / (div + 1);
+}
+
+/* Finds the base clock for the peripheral clock */
+static CHIP_CGU_BASE_CLK_T Chip_Clock_FindBaseClock(CHIP_CCU_CLK_T clk)
+{
+1a0006e8:	b430      	push	{r4, r5}
+1a0006ea:	4605      	mov	r5, r0
+   CHIP_CGU_BASE_CLK_T baseclk = CLK_BASE_NONE;
+   int i = 0;
+1a0006ec:	2300      	movs	r3, #0
+   CHIP_CGU_BASE_CLK_T baseclk = CLK_BASE_NONE;
+1a0006ee:	201c      	movs	r0, #28
+
+   while ((baseclk == CLK_BASE_NONE) && (periph_to_base[i].clkbase != baseclk)) {
+1a0006f0:	e000      	b.n	1a0006f4 <Chip_Clock_FindBaseClock+0xc>
+       if ((clk >= periph_to_base[i].clkstart) && (clk <= periph_to_base[i].clkend)) {
+           baseclk = periph_to_base[i].clkbase;
+       }
+       else {
+           i++;
+1a0006f2:	3301      	adds	r3, #1
+   while ((baseclk == CLK_BASE_NONE) && (periph_to_base[i].clkbase != baseclk)) {
+1a0006f4:	281c      	cmp	r0, #28
+1a0006f6:	d118      	bne.n	1a00072a <Chip_Clock_FindBaseClock+0x42>
+1a0006f8:	eb03 0243 	add.w	r2, r3, r3, lsl #1
+1a0006fc:	0051      	lsls	r1, r2, #1
+1a0006fe:	4a0c      	ldr	r2, [pc, #48]	; (1a000730 <Chip_Clock_FindBaseClock+0x48>)
+1a000700:	440a      	add	r2, r1
+1a000702:	7914      	ldrb	r4, [r2, #4]
+1a000704:	4284      	cmp	r4, r0
+1a000706:	d010      	beq.n	1a00072a <Chip_Clock_FindBaseClock+0x42>
+       if ((clk >= periph_to_base[i].clkstart) && (clk <= periph_to_base[i].clkend)) {
+1a000708:	eb03 0143 	add.w	r1, r3, r3, lsl #1
+1a00070c:	004a      	lsls	r2, r1, #1
+1a00070e:	4908      	ldr	r1, [pc, #32]	; (1a000730 <Chip_Clock_FindBaseClock+0x48>)
+1a000710:	5a8a      	ldrh	r2, [r1, r2]
+1a000712:	42aa      	cmp	r2, r5
+1a000714:	d8ed      	bhi.n	1a0006f2 <Chip_Clock_FindBaseClock+0xa>
+1a000716:	eb03 0243 	add.w	r2, r3, r3, lsl #1
+1a00071a:	0051      	lsls	r1, r2, #1
+1a00071c:	4a04      	ldr	r2, [pc, #16]	; (1a000730 <Chip_Clock_FindBaseClock+0x48>)
+1a00071e:	440a      	add	r2, r1
+1a000720:	8852      	ldrh	r2, [r2, #2]
+1a000722:	42aa      	cmp	r2, r5
+1a000724:	d3e5      	bcc.n	1a0006f2 <Chip_Clock_FindBaseClock+0xa>
+           baseclk = periph_to_base[i].clkbase;
+1a000726:	4620      	mov	r0, r4
+1a000728:	e7e4      	b.n	1a0006f4 <Chip_Clock_FindBaseClock+0xc>
+       }
+   }
+
+   return baseclk;
+}
+1a00072a:	bc30      	pop	{r4, r5}
+1a00072c:	4770      	bx	lr
+1a00072e:	bf00      	nop
+1a000730:	1a001220 	.word	0x1a001220
+
+1a000734 <Chip_Clock_EnableCrystal>:
+ * Public functions
+ ****************************************************************************/
+
+/* Enables the crystal oscillator */
+void Chip_Clock_EnableCrystal(void)
+{
+1a000734:	b082      	sub	sp, #8
+   volatile uint32_t delay = 1000;
+1a000736:	f44f 737a 	mov.w	r3, #1000	; 0x3e8
+1a00073a:	9301      	str	r3, [sp, #4]
+
+   uint32_t OldCrystalConfig = LPC_CGU->XTAL_OSC_CTRL;
+1a00073c:	4a0d      	ldr	r2, [pc, #52]	; (1a000774 <Chip_Clock_EnableCrystal+0x40>)
+1a00073e:	6993      	ldr	r3, [r2, #24]
+
+   /* Clear bypass mode */
+   OldCrystalConfig &= (~2);
+1a000740:	f023 0102 	bic.w	r1, r3, #2
+   if (OldCrystalConfig != LPC_CGU->XTAL_OSC_CTRL) {
+1a000744:	6992      	ldr	r2, [r2, #24]
+1a000746:	428a      	cmp	r2, r1
+1a000748:	d001      	beq.n	1a00074e <Chip_Clock_EnableCrystal+0x1a>
+       LPC_CGU->XTAL_OSC_CTRL = OldCrystalConfig;
+1a00074a:	4a0a      	ldr	r2, [pc, #40]	; (1a000774 <Chip_Clock_EnableCrystal+0x40>)
+1a00074c:	6191      	str	r1, [r2, #24]
+   }
+
+   /* Enable crystal oscillator */
+   OldCrystalConfig &= (~1);
+1a00074e:	f023 0303 	bic.w	r3, r3, #3
+   if (OscRateIn >= 20000000) {
+1a000752:	4a09      	ldr	r2, [pc, #36]	; (1a000778 <Chip_Clock_EnableCrystal+0x44>)
+1a000754:	6811      	ldr	r1, [r2, #0]
+1a000756:	4a09      	ldr	r2, [pc, #36]	; (1a00077c <Chip_Clock_EnableCrystal+0x48>)
+1a000758:	4291      	cmp	r1, r2
+1a00075a:	d901      	bls.n	1a000760 <Chip_Clock_EnableCrystal+0x2c>
+       OldCrystalConfig |= 4;  /* Set high frequency mode */
+1a00075c:	f043 0304 	orr.w	r3, r3, #4
+
+   }
+   LPC_CGU->XTAL_OSC_CTRL = OldCrystalConfig;
+1a000760:	4a04      	ldr	r2, [pc, #16]	; (1a000774 <Chip_Clock_EnableCrystal+0x40>)
+1a000762:	6193      	str	r3, [r2, #24]
+
+   /* Delay for 250uSec */
+   while(delay--) {}
+1a000764:	9b01      	ldr	r3, [sp, #4]
+1a000766:	1e5a      	subs	r2, r3, #1
+1a000768:	9201      	str	r2, [sp, #4]
+1a00076a:	2b00      	cmp	r3, #0
+1a00076c:	d1fa      	bne.n	1a000764 <Chip_Clock_EnableCrystal+0x30>
+}
+1a00076e:	b002      	add	sp, #8
+1a000770:	4770      	bx	lr
+1a000772:	bf00      	nop
+1a000774:	40050000 	.word	0x40050000
+1a000778:	1a001344 	.word	0x1a001344
+1a00077c:	01312cff 	.word	0x01312cff
+
+1a000780 <Chip_Clock_GetDividerSource>:
+}
+
+/* Gets a CGU clock divider source */
+CHIP_CGU_CLKIN_T Chip_Clock_GetDividerSource(CHIP_CGU_IDIV_T Divider)
+{
+   uint32_t reg = LPC_CGU->IDIV_CTRL[Divider];
+1a000780:	3012      	adds	r0, #18
+1a000782:	4b05      	ldr	r3, [pc, #20]	; (1a000798 <Chip_Clock_GetDividerSource+0x18>)
+1a000784:	f853 0020 	ldr.w	r0, [r3, r0, lsl #2]
+
+   if (reg & 1) {  /* divider is powered down */
+1a000788:	f010 0f01 	tst.w	r0, #1
+1a00078c:	d102      	bne.n	1a000794 <Chip_Clock_GetDividerSource+0x14>
+       return CLKINPUT_PD;
+   }
+
+   return (CHIP_CGU_CLKIN_T) ((reg >> 24) & 0x1F);
+1a00078e:	f3c0 6004 	ubfx	r0, r0, #24, #5
+1a000792:	4770      	bx	lr
+       return CLKINPUT_PD;
+1a000794:	2011      	movs	r0, #17
+}
+1a000796:	4770      	bx	lr
+1a000798:	40050000 	.word	0x40050000
+
+1a00079c <Chip_Clock_GetDividerDivisor>:
+
+/* Gets a CGU clock divider divisor */
+uint32_t Chip_Clock_GetDividerDivisor(CHIP_CGU_IDIV_T Divider)
+{
+   return (CHIP_CGU_CLKIN_T) ((LPC_CGU->IDIV_CTRL[Divider] >> 2) & CHIP_CGU_IDIV_MASK(Divider));
+1a00079c:	f100 0212 	add.w	r2, r0, #18
+1a0007a0:	4b03      	ldr	r3, [pc, #12]	; (1a0007b0 <Chip_Clock_GetDividerDivisor+0x14>)
+1a0007a2:	f853 2022 	ldr.w	r2, [r3, r2, lsl #2]
+1a0007a6:	4b03      	ldr	r3, [pc, #12]	; (1a0007b4 <Chip_Clock_GetDividerDivisor+0x18>)
+1a0007a8:	5c18      	ldrb	r0, [r3, r0]
+}
+1a0007aa:	ea00 0092 	and.w	r0, r0, r2, lsr #2
+1a0007ae:	4770      	bx	lr
+1a0007b0:	40050000 	.word	0x40050000
+1a0007b4:	1a001218 	.word	0x1a001218
+
+1a0007b8 <Chip_Clock_GetClockInputHz>:
+
+/* Returns the frequency of the specified input clock source */
+uint32_t Chip_Clock_GetClockInputHz(CHIP_CGU_CLKIN_T input)
+{
+1a0007b8:	b508      	push	{r3, lr}
+   uint32_t rate = 0;
+
+   switch (input) {
+1a0007ba:	2810      	cmp	r0, #16
+1a0007bc:	d80a      	bhi.n	1a0007d4 <Chip_Clock_GetClockInputHz+0x1c>
+1a0007be:	e8df f000 	tbb	[pc, r0]
+1a0007c2:	0b44      	.short	0x0b44
+1a0007c4:	0921180d 	.word	0x0921180d
+1a0007c8:	2d2a2724 	.word	0x2d2a2724
+1a0007cc:	34300909 	.word	0x34300909
+1a0007d0:	3c38      	.short	0x3c38
+1a0007d2:	40          	.byte	0x40
+1a0007d3:	00          	.byte	0x00
+   uint32_t rate = 0;
+1a0007d4:	2000      	movs	r0, #0
+1a0007d6:	e03a      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+   case CLKIN_32K:
+       rate = CRYSTAL_32K_FREQ_IN;
+       break;
+
+   case CLKIN_IRC:
+       rate = CGU_IRC_FREQ;
+1a0007d8:	481e      	ldr	r0, [pc, #120]	; (1a000854 <Chip_Clock_GetClockInputHz+0x9c>)
+       break;
+1a0007da:	e038      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+
+   case CLKIN_ENET_RX:
+       if ((LPC_CREG->CREG6 & 0x07) != 0x4) {
+1a0007dc:	4b1e      	ldr	r3, [pc, #120]	; (1a000858 <Chip_Clock_GetClockInputHz+0xa0>)
+1a0007de:	f8d3 312c 	ldr.w	r3, [r3, #300]	; 0x12c
+1a0007e2:	f003 0307 	and.w	r3, r3, #7
+1a0007e6:	2b04      	cmp	r3, #4
+1a0007e8:	d001      	beq.n	1a0007ee <Chip_Clock_GetClockInputHz+0x36>
+           /* MII mode requires 25MHz clock */
+           rate = 25000000;
+1a0007ea:	481c      	ldr	r0, [pc, #112]	; (1a00085c <Chip_Clock_GetClockInputHz+0xa4>)
+1a0007ec:	e02f      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+   uint32_t rate = 0;
+1a0007ee:	2000      	movs	r0, #0
+1a0007f0:	e02d      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+       }
+       break;
+
+   case CLKIN_ENET_TX:
+       if ((LPC_CREG->CREG6 & 0x07) != 0x4) {
+1a0007f2:	4b19      	ldr	r3, [pc, #100]	; (1a000858 <Chip_Clock_GetClockInputHz+0xa0>)
+1a0007f4:	f8d3 312c 	ldr.w	r3, [r3, #300]	; 0x12c
+1a0007f8:	f003 0307 	and.w	r3, r3, #7
+1a0007fc:	2b04      	cmp	r3, #4
+1a0007fe:	d027      	beq.n	1a000850 <Chip_Clock_GetClockInputHz+0x98>
+           rate = 25000000; /* MII uses 25 MHz */
+1a000800:	4816      	ldr	r0, [pc, #88]	; (1a00085c <Chip_Clock_GetClockInputHz+0xa4>)
+1a000802:	e024      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+           rate = 50000000; /* RMII uses 50 MHz */
+       }
+       break;
+
+   case CLKIN_CLKIN:
+       rate = ExtRateIn;
+1a000804:	4b16      	ldr	r3, [pc, #88]	; (1a000860 <Chip_Clock_GetClockInputHz+0xa8>)
+1a000806:	6818      	ldr	r0, [r3, #0]
+       break;
+1a000808:	e021      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+
+   case CLKIN_CRYSTAL:
+       rate = OscRateIn;
+1a00080a:	4b16      	ldr	r3, [pc, #88]	; (1a000864 <Chip_Clock_GetClockInputHz+0xac>)
+1a00080c:	6818      	ldr	r0, [r3, #0]
+       break;
+1a00080e:	e01e      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+
+   case CLKIN_USBPLL:
+       rate = audio_usb_pll_freq[CGU_USB_PLL];
+1a000810:	4b15      	ldr	r3, [pc, #84]	; (1a000868 <Chip_Clock_GetClockInputHz+0xb0>)
+1a000812:	6818      	ldr	r0, [r3, #0]
+       break;
+1a000814:	e01b      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+
+   case CLKIN_AUDIOPLL:
+       rate = audio_usb_pll_freq[CGU_AUDIO_PLL];
+1a000816:	4b14      	ldr	r3, [pc, #80]	; (1a000868 <Chip_Clock_GetClockInputHz+0xb0>)
+1a000818:	6858      	ldr	r0, [r3, #4]
+       break;
+1a00081a:	e018      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+
+   case CLKIN_MAINPLL:
+       rate = Chip_Clock_GetMainPLLHz();
+1a00081c:	f000 f868 	bl	1a0008f0 <Chip_Clock_GetMainPLLHz>
+       break;
+1a000820:	e015      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+
+   case CLKIN_IDIVA:
+       rate = Chip_Clock_GetDivRate(input, CLK_IDIV_A);
+1a000822:	2100      	movs	r1, #0
+1a000824:	f000 f89a 	bl	1a00095c <Chip_Clock_GetDivRate>
+       break;
+1a000828:	e011      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+
+   case CLKIN_IDIVB:
+       rate = Chip_Clock_GetDivRate(input, CLK_IDIV_B);
+1a00082a:	2101      	movs	r1, #1
+1a00082c:	f000 f896 	bl	1a00095c <Chip_Clock_GetDivRate>
+       break;
+1a000830:	e00d      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+
+   case CLKIN_IDIVC:
+       rate = Chip_Clock_GetDivRate(input, CLK_IDIV_C);
+1a000832:	2102      	movs	r1, #2
+1a000834:	f000 f892 	bl	1a00095c <Chip_Clock_GetDivRate>
+       break;
+1a000838:	e009      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+
+   case CLKIN_IDIVD:
+       rate = Chip_Clock_GetDivRate(input, CLK_IDIV_D);
+1a00083a:	2103      	movs	r1, #3
+1a00083c:	f000 f88e 	bl	1a00095c <Chip_Clock_GetDivRate>
+       break;
+1a000840:	e005      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+
+   case CLKIN_IDIVE:
+       rate = Chip_Clock_GetDivRate(input, CLK_IDIV_E);
+1a000842:	2104      	movs	r1, #4
+1a000844:	f000 f88a 	bl	1a00095c <Chip_Clock_GetDivRate>
+       break;
+1a000848:	e001      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+       rate = CRYSTAL_32K_FREQ_IN;
+1a00084a:	f44f 4000 	mov.w	r0, #32768	; 0x8000
+   default:
+       break;
+   }
+
+   return rate;
+}
+1a00084e:	bd08      	pop	{r3, pc}
+           rate = 50000000; /* RMII uses 50 MHz */
+1a000850:	4806      	ldr	r0, [pc, #24]	; (1a00086c <Chip_Clock_GetClockInputHz+0xb4>)
+   return rate;
+1a000852:	e7fc      	b.n	1a00084e <Chip_Clock_GetClockInputHz+0x96>
+1a000854:	00b71b00 	.word	0x00b71b00
+1a000858:	40043000 	.word	0x40043000
+1a00085c:	017d7840 	.word	0x017d7840
+1a000860:	1a001340 	.word	0x1a001340
+1a000864:	1a001344 	.word	0x1a001344
+1a000868:	10000008 	.word	0x10000008
+1a00086c:	02faf080 	.word	0x02faf080
+
+1a000870 <Chip_Clock_CalcMainPLLValue>:
+{
+1a000870:	b538      	push	{r3, r4, r5, lr}
+1a000872:	4605      	mov	r5, r0
+1a000874:	460c      	mov	r4, r1
+   ppll->fin = Chip_Clock_GetClockInputHz(ppll->srcin);
+1a000876:	7908      	ldrb	r0, [r1, #4]
+1a000878:	f7ff ff9e 	bl	1a0007b8 <Chip_Clock_GetClockInputHz>
+1a00087c:	6160      	str	r0, [r4, #20]
+   if (freq > MAX_CLOCK_FREQ || freq < (PLL_MIN_CCO_FREQ / 16) || !ppll->fin) {
+1a00087e:	4b19      	ldr	r3, [pc, #100]	; (1a0008e4 <Chip_Clock_CalcMainPLLValue+0x74>)
+1a000880:	442b      	add	r3, r5
+1a000882:	4a19      	ldr	r2, [pc, #100]	; (1a0008e8 <Chip_Clock_CalcMainPLLValue+0x78>)
+1a000884:	4293      	cmp	r3, r2
+1a000886:	d821      	bhi.n	1a0008cc <Chip_Clock_CalcMainPLLValue+0x5c>
+1a000888:	b318      	cbz	r0, 1a0008d2 <Chip_Clock_CalcMainPLLValue+0x62>
+   ppll->ctrl = 1 << 7; /* Enable direct mode [If possible] */
+1a00088a:	2380      	movs	r3, #128	; 0x80
+1a00088c:	6023      	str	r3, [r4, #0]
+   ppll->nsel = 0;
+1a00088e:	2300      	movs	r3, #0
+1a000890:	60a3      	str	r3, [r4, #8]
+   ppll->psel = 0;
+1a000892:	60e3      	str	r3, [r4, #12]
+   ppll->msel = freq / ppll->fin;
+1a000894:	fbb5 f3f0 	udiv	r3, r5, r0
+1a000898:	6123      	str	r3, [r4, #16]
+   if (freq < PLL_MIN_CCO_FREQ || ppll->msel * ppll->fin != freq) {
+1a00089a:	4a14      	ldr	r2, [pc, #80]	; (1a0008ec <Chip_Clock_CalcMainPLLValue+0x7c>)
+1a00089c:	4295      	cmp	r5, r2
+1a00089e:	d903      	bls.n	1a0008a8 <Chip_Clock_CalcMainPLLValue+0x38>
+1a0008a0:	fb03 f000 	mul.w	r0, r3, r0
+1a0008a4:	42a8      	cmp	r0, r5
+1a0008a6:	d007      	beq.n	1a0008b8 <Chip_Clock_CalcMainPLLValue+0x48>
+       pll_get_frac(freq, ppll);
+1a0008a8:	4621      	mov	r1, r4
+1a0008aa:	4628      	mov	r0, r5
+1a0008ac:	f7ff fe9c 	bl	1a0005e8 <pll_get_frac>
+       if (!ppll->nsel) {
+1a0008b0:	68a3      	ldr	r3, [r4, #8]
+1a0008b2:	b18b      	cbz	r3, 1a0008d8 <Chip_Clock_CalcMainPLLValue+0x68>
+       ppll->nsel --;
+1a0008b4:	3b01      	subs	r3, #1
+1a0008b6:	60a3      	str	r3, [r4, #8]
+   if (ppll->msel == 0) {
+1a0008b8:	6923      	ldr	r3, [r4, #16]
+1a0008ba:	b183      	cbz	r3, 1a0008de <Chip_Clock_CalcMainPLLValue+0x6e>
+   if (ppll->psel) {
+1a0008bc:	68e2      	ldr	r2, [r4, #12]
+1a0008be:	b10a      	cbz	r2, 1a0008c4 <Chip_Clock_CalcMainPLLValue+0x54>
+       ppll->psel --;
+1a0008c0:	3a01      	subs	r2, #1
+1a0008c2:	60e2      	str	r2, [r4, #12]
+   ppll->msel --;
+1a0008c4:	3b01      	subs	r3, #1
+1a0008c6:	6123      	str	r3, [r4, #16]
+   return 0;
+1a0008c8:	2000      	movs	r0, #0
+}
+1a0008ca:	bd38      	pop	{r3, r4, r5, pc}
+       return -1;
+1a0008cc:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
+1a0008d0:	e7fb      	b.n	1a0008ca <Chip_Clock_CalcMainPLLValue+0x5a>
+1a0008d2:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
+1a0008d6:	e7f8      	b.n	1a0008ca <Chip_Clock_CalcMainPLLValue+0x5a>
+           return -1;
+1a0008d8:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
+1a0008dc:	e7f5      	b.n	1a0008ca <Chip_Clock_CalcMainPLLValue+0x5a>
+       return - 1;
+1a0008de:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
+1a0008e2:	e7f2      	b.n	1a0008ca <Chip_Clock_CalcMainPLLValue+0x5a>
+1a0008e4:	ff6b3a10 	.word	0xff6b3a10
+1a0008e8:	0b940510 	.word	0x0b940510
+1a0008ec:	094c5eff 	.word	0x094c5eff
+
+1a0008f0 <Chip_Clock_GetMainPLLHz>:
+{
+1a0008f0:	b530      	push	{r4, r5, lr}
+1a0008f2:	b083      	sub	sp, #12
+   uint32_t PLLReg = LPC_CGU->PLL1_CTRL;
+1a0008f4:	4d17      	ldr	r5, [pc, #92]	; (1a000954 <Chip_Clock_GetMainPLLHz+0x64>)
+1a0008f6:	6c6c      	ldr	r4, [r5, #68]	; 0x44
+   uint32_t freq = Chip_Clock_GetClockInputHz((CHIP_CGU_CLKIN_T) ((PLLReg >> 24) & 0xF));
+1a0008f8:	f3c4 6003 	ubfx	r0, r4, #24, #4
+1a0008fc:	f7ff ff5c 	bl	1a0007b8 <Chip_Clock_GetClockInputHz>
+   const uint8_t ptab[] = {1, 2, 4, 8};
+1a000900:	4b15      	ldr	r3, [pc, #84]	; (1a000958 <Chip_Clock_GetMainPLLHz+0x68>)
+1a000902:	681b      	ldr	r3, [r3, #0]
+1a000904:	9301      	str	r3, [sp, #4]
+   if (!(LPC_CGU->PLL1_STAT & 1)) {
+1a000906:	6c2b      	ldr	r3, [r5, #64]	; 0x40
+1a000908:	f013 0f01 	tst.w	r3, #1
+1a00090c:	d020      	beq.n	1a000950 <Chip_Clock_GetMainPLLHz+0x60>
+   msel = (PLLReg >> 16) & 0xFF;
+1a00090e:	f3c4 4307 	ubfx	r3, r4, #16, #8
+   nsel = (PLLReg >> 12) & 0x3;
+1a000912:	f3c4 3201 	ubfx	r2, r4, #12, #2
+   psel = (PLLReg >> 8) & 0x3;
+1a000916:	f3c4 2101 	ubfx	r1, r4, #8, #2
+   fbsel = (PLLReg >> 6) & 0x1;
+1a00091a:	f3c4 1580 	ubfx	r5, r4, #6, #1
+   m = msel + 1;
+1a00091e:	3301      	adds	r3, #1
+   n = nsel + 1;
+1a000920:	3201      	adds	r2, #1
+   p = ptab[psel];
+1a000922:	f10d 0c08 	add.w	ip, sp, #8
+1a000926:	4461      	add	r1, ip
+1a000928:	f811 1c04 	ldrb.w	r1, [r1, #-4]
+   if (direct || fbsel) {
+1a00092c:	f014 0f80 	tst.w	r4, #128	; 0x80
+1a000930:	d108      	bne.n	1a000944 <Chip_Clock_GetMainPLLHz+0x54>
+1a000932:	b93d      	cbnz	r5, 1a000944 <Chip_Clock_GetMainPLLHz+0x54>
+   return (m / (2 * p)) * (freq / n);
+1a000934:	0049      	lsls	r1, r1, #1
+1a000936:	fbb3 f3f1 	udiv	r3, r3, r1
+1a00093a:	fbb0 f0f2 	udiv	r0, r0, r2
+1a00093e:	fb00 f003 	mul.w	r0, r0, r3
+1a000942:	e003      	b.n	1a00094c <Chip_Clock_GetMainPLLHz+0x5c>
+       return m * (freq / n);
+1a000944:	fbb0 f0f2 	udiv	r0, r0, r2
+1a000948:	fb03 f000 	mul.w	r0, r3, r0
+}
+1a00094c:	b003      	add	sp, #12
+1a00094e:	bd30      	pop	{r4, r5, pc}
+       return 0;
+1a000950:	2000      	movs	r0, #0
+1a000952:	e7fb      	b.n	1a00094c <Chip_Clock_GetMainPLLHz+0x5c>
+1a000954:	40050000 	.word	0x40050000
+1a000958:	1a001214 	.word	0x1a001214
+
+1a00095c <Chip_Clock_GetDivRate>:
+{
+1a00095c:	b538      	push	{r3, r4, r5, lr}
+1a00095e:	460c      	mov	r4, r1
+   input = Chip_Clock_GetDividerSource(divider);
+1a000960:	4608      	mov	r0, r1
+1a000962:	f7ff ff0d 	bl	1a000780 <Chip_Clock_GetDividerSource>
+1a000966:	4605      	mov	r5, r0
+   div = Chip_Clock_GetDividerDivisor(divider);
+1a000968:	4620      	mov	r0, r4
+1a00096a:	f7ff ff17 	bl	1a00079c <Chip_Clock_GetDividerDivisor>
+1a00096e:	4604      	mov	r4, r0
+   return Chip_Clock_GetClockInputHz(input) / (div + 1);
+1a000970:	4628      	mov	r0, r5
+1a000972:	f7ff ff21 	bl	1a0007b8 <Chip_Clock_GetClockInputHz>
+1a000976:	3401      	adds	r4, #1
+}
+1a000978:	fbb0 f0f4 	udiv	r0, r0, r4
+1a00097c:	bd38      	pop	{r3, r4, r5, pc}
+1a00097e:	Address 0x000000001a00097e is out of bounds.
+
+
+1a000980 <Chip_Clock_SetBaseClock>:
+   return Chip_Clock_GetClockInputHz(Chip_Clock_GetBaseClock(clock));
+}
+
+/* Sets a CGU Base Clock clock source */
+void Chip_Clock_SetBaseClock(CHIP_CGU_BASE_CLK_T BaseClock, CHIP_CGU_CLKIN_T Input, bool autoblocken, bool powerdn)
+{
+1a000980:	b430      	push	{r4, r5}
+   uint32_t reg = LPC_CGU->BASE_CLK[BaseClock];
+1a000982:	f100 0416 	add.w	r4, r0, #22
+1a000986:	00a4      	lsls	r4, r4, #2
+1a000988:	f104 4480 	add.w	r4, r4, #1073741824	; 0x40000000
+1a00098c:	f504 24a0 	add.w	r4, r4, #327680	; 0x50000
+1a000990:	6864      	ldr	r4, [r4, #4]
+
+   if (BaseClock < CLK_BASE_NONE) {
+1a000992:	281b      	cmp	r0, #27
+1a000994:	d813      	bhi.n	1a0009be <Chip_Clock_SetBaseClock+0x3e>
+       if (Input != CLKINPUT_PD) {
+1a000996:	2911      	cmp	r1, #17
+1a000998:	d01a      	beq.n	1a0009d0 <Chip_Clock_SetBaseClock+0x50>
+           /* Mask off fields we plan to update */
+           reg &= ~((0x1F << 24) | 1 | (1 << 11));
+1a00099a:	4d0e      	ldr	r5, [pc, #56]	; (1a0009d4 <Chip_Clock_SetBaseClock+0x54>)
+1a00099c:	4025      	ands	r5, r4
+
+           if (autoblocken) {
+1a00099e:	b10a      	cbz	r2, 1a0009a4 <Chip_Clock_SetBaseClock+0x24>
+               reg |= (1 << 11);
+1a0009a0:	f445 6500 	orr.w	r5, r5, #2048	; 0x800
+           }
+           if (powerdn) {
+1a0009a4:	b10b      	cbz	r3, 1a0009aa <Chip_Clock_SetBaseClock+0x2a>
+               reg |= (1 << 0);
+1a0009a6:	f045 0501 	orr.w	r5, r5, #1
+           }
+
+           /* Set clock source */
+           reg |= (Input << 24);
+1a0009aa:	ea45 6501 	orr.w	r5, r5, r1, lsl #24
+
+           LPC_CGU->BASE_CLK[BaseClock] = reg;
+1a0009ae:	3016      	adds	r0, #22
+1a0009b0:	0080      	lsls	r0, r0, #2
+1a0009b2:	f100 4080 	add.w	r0, r0, #1073741824	; 0x40000000
+1a0009b6:	f500 20a0 	add.w	r0, r0, #327680	; 0x50000
+1a0009ba:	6045      	str	r5, [r0, #4]
+1a0009bc:	e008      	b.n	1a0009d0 <Chip_Clock_SetBaseClock+0x50>
+       }
+   }
+   else {
+       LPC_CGU->BASE_CLK[BaseClock] = reg | 1; /* Power down this base clock */
+1a0009be:	f044 0401 	orr.w	r4, r4, #1
+1a0009c2:	3016      	adds	r0, #22
+1a0009c4:	0080      	lsls	r0, r0, #2
+1a0009c6:	f100 4080 	add.w	r0, r0, #1073741824	; 0x40000000
+1a0009ca:	f500 20a0 	add.w	r0, r0, #327680	; 0x50000
+1a0009ce:	6044      	str	r4, [r0, #4]
+   }
+}
+1a0009d0:	bc30      	pop	{r4, r5}
+1a0009d2:	4770      	bx	lr
+1a0009d4:	e0fff7fe 	.word	0xe0fff7fe
+
+1a0009d8 <Chip_Clock_GetBaseClock>:
+/* Gets a CGU Base Clock clock source */
+CHIP_CGU_CLKIN_T Chip_Clock_GetBaseClock(CHIP_CGU_BASE_CLK_T BaseClock)
+{
+   uint32_t reg;
+
+   if (BaseClock >= CLK_BASE_NONE) {
+1a0009d8:	281b      	cmp	r0, #27
+1a0009da:	d80c      	bhi.n	1a0009f6 <Chip_Clock_GetBaseClock+0x1e>
+       return CLKINPUT_PD;
+   }
+
+   reg = LPC_CGU->BASE_CLK[BaseClock];
+1a0009dc:	3016      	adds	r0, #22
+1a0009de:	0080      	lsls	r0, r0, #2
+1a0009e0:	f100 4080 	add.w	r0, r0, #1073741824	; 0x40000000
+1a0009e4:	f500 20a0 	add.w	r0, r0, #327680	; 0x50000
+1a0009e8:	6840      	ldr	r0, [r0, #4]
+
+   /* base clock is powered down? */
+   if (reg & 1) {
+1a0009ea:	f010 0f01 	tst.w	r0, #1
+1a0009ee:	d104      	bne.n	1a0009fa <Chip_Clock_GetBaseClock+0x22>
+       return CLKINPUT_PD;
+   }
+
+   return (CHIP_CGU_CLKIN_T) ((reg >> 24) & 0x1F);
+1a0009f0:	f3c0 6004 	ubfx	r0, r0, #24, #5
+1a0009f4:	4770      	bx	lr
+       return CLKINPUT_PD;
+1a0009f6:	2011      	movs	r0, #17
+1a0009f8:	4770      	bx	lr
+       return CLKINPUT_PD;
+1a0009fa:	2011      	movs	r0, #17
+}
+1a0009fc:	4770      	bx	lr
+
+1a0009fe <Chip_Clock_GetBaseClocktHz>:
+{
+1a0009fe:	b508      	push	{r3, lr}
+   return Chip_Clock_GetClockInputHz(Chip_Clock_GetBaseClock(clock));
+1a000a00:	f7ff ffea 	bl	1a0009d8 <Chip_Clock_GetBaseClock>
+1a000a04:	f7ff fed8 	bl	1a0007b8 <Chip_Clock_GetClockInputHz>
+}
+1a000a08:	bd08      	pop	{r3, pc}
+1a000a0a:	Address 0x000000001a000a0a is out of bounds.
+
+
+1a000a0c <Chip_Clock_EnableOpts>:
+/* Enables a peripheral clock and sets clock states */
+void Chip_Clock_EnableOpts(CHIP_CCU_CLK_T clk, bool autoen, bool wakeupen, int div)
+{
+   uint32_t reg = 1;
+
+   if (autoen) {
+1a000a0c:	b971      	cbnz	r1, 1a000a2c <Chip_Clock_EnableOpts+0x20>
+   uint32_t reg = 1;
+1a000a0e:	2101      	movs	r1, #1
+       reg |= (1 << 1);
+   }
+   if (wakeupen) {
+1a000a10:	b10a      	cbz	r2, 1a000a16 <Chip_Clock_EnableOpts+0xa>
+       reg |= (1 << 2);
+1a000a12:	f041 0104 	orr.w	r1, r1, #4
+   }
+
+   /* Not all clocks support a divider, but we won't check that here. Only
+      dividers of 1 and 2 are allowed. Assume 1 if not 2 */
+   if (div == 2) {
+1a000a16:	2b02      	cmp	r3, #2
+1a000a18:	d00a      	beq.n	1a000a30 <Chip_Clock_EnableOpts+0x24>
+       reg |= (1 << 5);
+   }
+
+   /* Setup peripheral clock and start running */
+   if (clk >= CLK_CCU2_START) {
+1a000a1a:	f5b0 7fa1 	cmp.w	r0, #322	; 0x142
+1a000a1e:	d30a      	bcc.n	1a000a36 <Chip_Clock_EnableOpts+0x2a>
+       LPC_CCU2->CLKCCU[clk - CLK_CCU2_START].CFG = reg;
+1a000a20:	f5a0 7091 	sub.w	r0, r0, #290	; 0x122
+1a000a24:	4b06      	ldr	r3, [pc, #24]	; (1a000a40 <Chip_Clock_EnableOpts+0x34>)
+1a000a26:	f843 1030 	str.w	r1, [r3, r0, lsl #3]
+1a000a2a:	4770      	bx	lr
+       reg |= (1 << 1);
+1a000a2c:	2103      	movs	r1, #3
+1a000a2e:	e7ef      	b.n	1a000a10 <Chip_Clock_EnableOpts+0x4>
+       reg |= (1 << 5);
+1a000a30:	f041 0120 	orr.w	r1, r1, #32
+1a000a34:	e7f1      	b.n	1a000a1a <Chip_Clock_EnableOpts+0xe>
+   }
+   else {
+       LPC_CCU1->CLKCCU[clk].CFG = reg;
+1a000a36:	3020      	adds	r0, #32
+1a000a38:	4b02      	ldr	r3, [pc, #8]	; (1a000a44 <Chip_Clock_EnableOpts+0x38>)
+1a000a3a:	f843 1030 	str.w	r1, [r3, r0, lsl #3]
+   }
+}
+1a000a3e:	4770      	bx	lr
+1a000a40:	40052000 	.word	0x40052000
+1a000a44:	40051000 	.word	0x40051000
+
+1a000a48 <Chip_Clock_GetRate>:
+   LPC_CCU2->PM = 0;
+}
+
+/* Returns a peripheral clock rate */
+uint32_t Chip_Clock_GetRate(CHIP_CCU_CLK_T clk)
+{
+1a000a48:	b510      	push	{r4, lr}
+   CHIP_CGU_BASE_CLK_T baseclk;
+   uint32_t reg, div, rate;
+
+   /* Get CCU config register for clock */
+   if (clk >= CLK_CCU2_START) {
+1a000a4a:	f5b0 7fa1 	cmp.w	r0, #322	; 0x142
+1a000a4e:	d309      	bcc.n	1a000a64 <Chip_Clock_GetRate+0x1c>
+       reg = LPC_CCU2->CLKCCU[clk - CLK_CCU2_START].CFG;
+1a000a50:	f5a0 7391 	sub.w	r3, r0, #290	; 0x122
+1a000a54:	4a0d      	ldr	r2, [pc, #52]	; (1a000a8c <Chip_Clock_GetRate+0x44>)
+1a000a56:	f852 4033 	ldr.w	r4, [r2, r3, lsl #3]
+   else {
+       reg = LPC_CCU1->CLKCCU[clk].CFG;
+   }
+
+   /* Is the clock enabled? */
+   if (reg & 1) {
+1a000a5a:	f014 0f01 	tst.w	r4, #1
+1a000a5e:	d107      	bne.n	1a000a70 <Chip_Clock_GetRate+0x28>
+
+       }
+       rate = rate / div;
+   }
+   else {
+       rate = 0;
+1a000a60:	2000      	movs	r0, #0
+   }
+
+   return rate;
+}
+1a000a62:	bd10      	pop	{r4, pc}
+       reg = LPC_CCU1->CLKCCU[clk].CFG;
+1a000a64:	f100 0320 	add.w	r3, r0, #32
+1a000a68:	4a09      	ldr	r2, [pc, #36]	; (1a000a90 <Chip_Clock_GetRate+0x48>)
+1a000a6a:	f852 4033 	ldr.w	r4, [r2, r3, lsl #3]
+1a000a6e:	e7f4      	b.n	1a000a5a <Chip_Clock_GetRate+0x12>
+       baseclk = Chip_Clock_FindBaseClock(clk);
+1a000a70:	f7ff fe3a 	bl	1a0006e8 <Chip_Clock_FindBaseClock>
+       rate = Chip_Clock_GetBaseClocktHz(baseclk);
+1a000a74:	f7ff ffc3 	bl	1a0009fe <Chip_Clock_GetBaseClocktHz>
+       if (((reg >> 5) & 0x7) == 0) {
+1a000a78:	f014 0fe0 	tst.w	r4, #224	; 0xe0
+1a000a7c:	d103      	bne.n	1a000a86 <Chip_Clock_GetRate+0x3e>
+           div = 1;
+1a000a7e:	2301      	movs	r3, #1
+       rate = rate / div;
+1a000a80:	fbb0 f0f3 	udiv	r0, r0, r3
+1a000a84:	e7ed      	b.n	1a000a62 <Chip_Clock_GetRate+0x1a>
+           div = 2;/* No other dividers supported */
+1a000a86:	2302      	movs	r3, #2
+1a000a88:	e7fa      	b.n	1a000a80 <Chip_Clock_GetRate+0x38>
+1a000a8a:	bf00      	nop
+1a000a8c:	40052000 	.word	0x40052000
+1a000a90:	40051000 	.word	0x40051000
+
+1a000a94 <Chip_SetupCoreClock>:
+/*****************************************************************************
+ * Public functions
+ ****************************************************************************/
+/* Setup Chip Core clock */
+void Chip_SetupCoreClock(CHIP_CGU_CLKIN_T clkin, uint32_t core_freq, bool setbase)
+{
+1a000a94:	b570      	push	{r4, r5, r6, lr}
+1a000a96:	b092      	sub	sp, #72	; 0x48
+1a000a98:	4605      	mov	r5, r0
+1a000a9a:	460e      	mov	r6, r1
+1a000a9c:	4614      	mov	r4, r2
+   int i;
+   volatile uint32_t delay = 5500;
+1a000a9e:	f241 537c 	movw	r3, #5500	; 0x157c
+1a000aa2:	9311      	str	r3, [sp, #68]	; 0x44
+   uint32_t direct = 0;
+   PLL_PARAM_T ppll;
+
+   if (clkin == CLKIN_CRYSTAL) {
+1a000aa4:	2806      	cmp	r0, #6
+1a000aa6:	d044      	beq.n	1a000b32 <Chip_SetupCoreClock+0x9e>
+       /* Switch main system clocking to crystal */
+       Chip_Clock_EnableCrystal();
+   }
+   Chip_Clock_SetBaseClock(CLK_BASE_MX, clkin, true, false);
+1a000aa8:	2300      	movs	r3, #0
+1a000aaa:	2201      	movs	r2, #1
+1a000aac:	4629      	mov	r1, r5
+1a000aae:	2004      	movs	r0, #4
+1a000ab0:	f7ff ff66 	bl	1a000980 <Chip_Clock_SetBaseClock>
+ * Saves power if the main PLL is not needed.
+ */
+__STATIC_INLINE void Chip_Clock_DisableMainPLL(void)
+{
+   /* power down main PLL */
+   LPC_CGU->PLL1_CTRL |= 1;
+1a000ab4:	4a4a      	ldr	r2, [pc, #296]	; (1a000be0 <Chip_SetupCoreClock+0x14c>)
+1a000ab6:	6c53      	ldr	r3, [r2, #68]	; 0x44
+1a000ab8:	f043 0301 	orr.w	r3, r3, #1
+1a000abc:	6453      	str	r3, [r2, #68]	; 0x44
+   Chip_Clock_DisableMainPLL(); /* Disable PLL */
+
+   /* Calculate the PLL Parameters */
+   ppll.srcin = clkin;
+1a000abe:	f88d 5028 	strb.w	r5, [sp, #40]	; 0x28
+   Chip_Clock_CalcMainPLLValue(core_freq, &ppll);
+1a000ac2:	a909      	add	r1, sp, #36	; 0x24
+1a000ac4:	4630      	mov	r0, r6
+1a000ac6:	f7ff fed3 	bl	1a000870 <Chip_Clock_CalcMainPLLValue>
+
+   if (core_freq > 110000000UL) {
+1a000aca:	4b46      	ldr	r3, [pc, #280]	; (1a000be4 <Chip_SetupCoreClock+0x150>)
+1a000acc:	429e      	cmp	r6, r3
+1a000ace:	d938      	bls.n	1a000b42 <Chip_SetupCoreClock+0xae>
+       if (!(ppll.ctrl & (1 << 7)) || ppll.psel) {
+1a000ad0:	9b09      	ldr	r3, [sp, #36]	; 0x24
+1a000ad2:	f013 0f80 	tst.w	r3, #128	; 0x80
+1a000ad6:	d001      	beq.n	1a000adc <Chip_SetupCoreClock+0x48>
+1a000ad8:	9a0c      	ldr	r2, [sp, #48]	; 0x30
+1a000ada:	b36a      	cbz	r2, 1a000b38 <Chip_SetupCoreClock+0xa4>
+           PLL_PARAM_T lpll;
+           /* Calculate the PLL Parameters */
+           lpll.srcin = clkin;
+1a000adc:	f88d 5008 	strb.w	r5, [sp, #8]
+           Chip_Clock_CalcMainPLLValue(110000000UL, &lpll);
+1a000ae0:	a901      	add	r1, sp, #4
+1a000ae2:	4840      	ldr	r0, [pc, #256]	; (1a000be4 <Chip_SetupCoreClock+0x150>)
+1a000ae4:	f7ff fec4 	bl	1a000870 <Chip_Clock_CalcMainPLLValue>
+ * Make sure the main PLL is enabled.
+ */
+__STATIC_INLINE void Chip_Clock_SetupMainPLL(const PLL_PARAM_T *ppll)
+{
+   /* power up main PLL */
+   LPC_CGU->PLL1_CTRL = ppll->ctrl | ((uint32_t) ppll->srcin << 24) | (ppll->msel << 16) | (ppll->nsel << 12) | (ppll->psel << 8);
+1a000ae8:	f89d 2008 	ldrb.w	r2, [sp, #8]
+1a000aec:	9b01      	ldr	r3, [sp, #4]
+1a000aee:	ea43 6302 	orr.w	r3, r3, r2, lsl #24
+1a000af2:	9a05      	ldr	r2, [sp, #20]
+1a000af4:	ea43 4302 	orr.w	r3, r3, r2, lsl #16
+1a000af8:	9a03      	ldr	r2, [sp, #12]
+1a000afa:	ea43 3302 	orr.w	r3, r3, r2, lsl #12
+1a000afe:	9a04      	ldr	r2, [sp, #16]
+1a000b00:	ea43 2302 	orr.w	r3, r3, r2, lsl #8
+1a000b04:	4a36      	ldr	r2, [pc, #216]	; (1a000be0 <Chip_SetupCoreClock+0x14c>)
+1a000b06:	6453      	str	r3, [r2, #68]	; 0x44
+ * @note   The main PLL should be locked prior to using it as a clock input for a base clock.
+ */
+__STATIC_INLINE int Chip_Clock_MainPLLLocked(void)
+{
+   /* Return true if locked */
+   return (LPC_CGU->PLL1_STAT & 1) != 0;
+1a000b08:	4b35      	ldr	r3, [pc, #212]	; (1a000be0 <Chip_SetupCoreClock+0x14c>)
+1a000b0a:	6c1b      	ldr	r3, [r3, #64]	; 0x40
+           Chip_Clock_SetupMainPLL(&lpll);
+           /* Wait for the PLL to lock */
+           while(!Chip_Clock_MainPLLLocked()) {}
+1a000b0c:	f013 0f01 	tst.w	r3, #1
+1a000b10:	d0fa      	beq.n	1a000b08 <Chip_SetupCoreClock+0x74>
+           Chip_Clock_SetBaseClock(CLK_BASE_MX, CLKIN_MAINPLL, true, false);
+1a000b12:	2300      	movs	r3, #0
+1a000b14:	2201      	movs	r2, #1
+1a000b16:	2109      	movs	r1, #9
+1a000b18:	2004      	movs	r0, #4
+1a000b1a:	f7ff ff31 	bl	1a000980 <Chip_Clock_SetBaseClock>
+           while(delay --){}
+1a000b1e:	9b11      	ldr	r3, [sp, #68]	; 0x44
+1a000b20:	1e5a      	subs	r2, r3, #1
+1a000b22:	9211      	str	r2, [sp, #68]	; 0x44
+1a000b24:	2b00      	cmp	r3, #0
+1a000b26:	d1fa      	bne.n	1a000b1e <Chip_SetupCoreClock+0x8a>
+           delay = 5500;
+1a000b28:	f241 537c 	movw	r3, #5500	; 0x157c
+1a000b2c:	9311      	str	r3, [sp, #68]	; 0x44
+   uint32_t direct = 0;
+1a000b2e:	2500      	movs	r5, #0
+       if (!(ppll.ctrl & (1 << 7)) || ppll.psel) {
+1a000b30:	e008      	b.n	1a000b44 <Chip_SetupCoreClock+0xb0>
+       Chip_Clock_EnableCrystal();
+1a000b32:	f7ff fdff 	bl	1a000734 <Chip_Clock_EnableCrystal>
+1a000b36:	e7b7      	b.n	1a000aa8 <Chip_SetupCoreClock+0x14>
+       } else {
+           direct = 1;
+           ppll.ctrl &= ~(1 << 7);
+1a000b38:	f023 0380 	bic.w	r3, r3, #128	; 0x80
+1a000b3c:	9309      	str	r3, [sp, #36]	; 0x24
+           direct = 1;
+1a000b3e:	2501      	movs	r5, #1
+1a000b40:	e000      	b.n	1a000b44 <Chip_SetupCoreClock+0xb0>
+   uint32_t direct = 0;
+1a000b42:	2500      	movs	r5, #0
+   LPC_CGU->PLL1_CTRL = ppll->ctrl | ((uint32_t) ppll->srcin << 24) | (ppll->msel << 16) | (ppll->nsel << 12) | (ppll->psel << 8);
+1a000b44:	f89d 2028 	ldrb.w	r2, [sp, #40]	; 0x28
+1a000b48:	9b09      	ldr	r3, [sp, #36]	; 0x24
+1a000b4a:	ea43 6302 	orr.w	r3, r3, r2, lsl #24
+1a000b4e:	9a0d      	ldr	r2, [sp, #52]	; 0x34
+1a000b50:	ea43 4302 	orr.w	r3, r3, r2, lsl #16
+1a000b54:	9a0b      	ldr	r2, [sp, #44]	; 0x2c
+1a000b56:	ea43 3302 	orr.w	r3, r3, r2, lsl #12
+1a000b5a:	9a0c      	ldr	r2, [sp, #48]	; 0x30
+1a000b5c:	ea43 2302 	orr.w	r3, r3, r2, lsl #8
+1a000b60:	4a1f      	ldr	r2, [pc, #124]	; (1a000be0 <Chip_SetupCoreClock+0x14c>)
+1a000b62:	6453      	str	r3, [r2, #68]	; 0x44
+   return (LPC_CGU->PLL1_STAT & 1) != 0;
+1a000b64:	4b1e      	ldr	r3, [pc, #120]	; (1a000be0 <Chip_SetupCoreClock+0x14c>)
+1a000b66:	6c1b      	ldr	r3, [r3, #64]	; 0x40
+
+   /* Setup and start the PLL */
+   Chip_Clock_SetupMainPLL(&ppll);
+
+   /* Wait for the PLL to lock */
+   while(!Chip_Clock_MainPLLLocked()) {}
+1a000b68:	f013 0f01 	tst.w	r3, #1
+1a000b6c:	d0fa      	beq.n	1a000b64 <Chip_SetupCoreClock+0xd0>
+
+   /* Set core clock base as PLL1 */
+   Chip_Clock_SetBaseClock(CLK_BASE_MX, CLKIN_MAINPLL, true, false);
+1a000b6e:	2300      	movs	r3, #0
+1a000b70:	2201      	movs	r2, #1
+1a000b72:	2109      	movs	r1, #9
+1a000b74:	2004      	movs	r0, #4
+1a000b76:	f7ff ff03 	bl	1a000980 <Chip_Clock_SetBaseClock>
+
+   while(delay --){} /* Wait for approx 50 uSec */
+1a000b7a:	9b11      	ldr	r3, [sp, #68]	; 0x44
+1a000b7c:	1e5a      	subs	r2, r3, #1
+1a000b7e:	9211      	str	r2, [sp, #68]	; 0x44
+1a000b80:	2b00      	cmp	r3, #0
+1a000b82:	d1fa      	bne.n	1a000b7a <Chip_SetupCoreClock+0xe6>
+   if (direct) {
+1a000b84:	b1d5      	cbz	r5, 1a000bbc <Chip_SetupCoreClock+0x128>
+       delay = 5500;
+1a000b86:	f241 537c 	movw	r3, #5500	; 0x157c
+1a000b8a:	9311      	str	r3, [sp, #68]	; 0x44
+       ppll.ctrl |= 1 << 7;
+1a000b8c:	9b09      	ldr	r3, [sp, #36]	; 0x24
+1a000b8e:	f043 0380 	orr.w	r3, r3, #128	; 0x80
+1a000b92:	9309      	str	r3, [sp, #36]	; 0x24
+   LPC_CGU->PLL1_CTRL = ppll->ctrl | ((uint32_t) ppll->srcin << 24) | (ppll->msel << 16) | (ppll->nsel << 12) | (ppll->psel << 8);
+1a000b94:	f89d 2028 	ldrb.w	r2, [sp, #40]	; 0x28
+1a000b98:	ea43 6302 	orr.w	r3, r3, r2, lsl #24
+1a000b9c:	9a0d      	ldr	r2, [sp, #52]	; 0x34
+1a000b9e:	ea43 4302 	orr.w	r3, r3, r2, lsl #16
+1a000ba2:	9a0b      	ldr	r2, [sp, #44]	; 0x2c
+1a000ba4:	ea43 3302 	orr.w	r3, r3, r2, lsl #12
+1a000ba8:	9a0c      	ldr	r2, [sp, #48]	; 0x30
+1a000baa:	ea43 2302 	orr.w	r3, r3, r2, lsl #8
+1a000bae:	4a0c      	ldr	r2, [pc, #48]	; (1a000be0 <Chip_SetupCoreClock+0x14c>)
+1a000bb0:	6453      	str	r3, [r2, #68]	; 0x44
+       Chip_Clock_SetupMainPLL(&ppll); /* Set DIRECT to operate at full frequency */
+       while(delay --){} /* Wait for approx 50 uSec */
+1a000bb2:	9b11      	ldr	r3, [sp, #68]	; 0x44
+1a000bb4:	1e5a      	subs	r2, r3, #1
+1a000bb6:	9211      	str	r2, [sp, #68]	; 0x44
+1a000bb8:	2b00      	cmp	r3, #0
+1a000bba:	d1fa      	bne.n	1a000bb2 <Chip_SetupCoreClock+0x11e>
+   }
+
+   if (setbase) {
+1a000bbc:	b90c      	cbnz	r4, 1a000bc2 <Chip_SetupCoreClock+0x12e>
+       for (i = 0; i < (sizeof(InitClkStates) / sizeof(InitClkStates[0])); i++) {
+           Chip_Clock_SetBaseClock(InitClkStates[i].clk, InitClkStates[i].clkin,
+                                   InitClkStates[i].autoblock_enab, InitClkStates[i].powerdn);
+       }
+   }
+}
+1a000bbe:	b012      	add	sp, #72	; 0x48
+1a000bc0:	bd70      	pop	{r4, r5, r6, pc}
+       for (i = 0; i < (sizeof(InitClkStates) / sizeof(InitClkStates[0])); i++) {
+1a000bc2:	2400      	movs	r4, #0
+1a000bc4:	2c11      	cmp	r4, #17
+1a000bc6:	d8fa      	bhi.n	1a000bbe <Chip_SetupCoreClock+0x12a>
+           Chip_Clock_SetBaseClock(InitClkStates[i].clk, InitClkStates[i].clkin,
+1a000bc8:	4807      	ldr	r0, [pc, #28]	; (1a000be8 <Chip_SetupCoreClock+0x154>)
+1a000bca:	eb00 0184 	add.w	r1, r0, r4, lsl #2
+1a000bce:	78cb      	ldrb	r3, [r1, #3]
+1a000bd0:	788a      	ldrb	r2, [r1, #2]
+1a000bd2:	7849      	ldrb	r1, [r1, #1]
+1a000bd4:	f810 0024 	ldrb.w	r0, [r0, r4, lsl #2]
+1a000bd8:	f7ff fed2 	bl	1a000980 <Chip_Clock_SetBaseClock>
+       for (i = 0; i < (sizeof(InitClkStates) / sizeof(InitClkStates[0])); i++) {
+1a000bdc:	3401      	adds	r4, #1
+1a000bde:	e7f1      	b.n	1a000bc4 <Chip_SetupCoreClock+0x130>
+1a000be0:	40050000 	.word	0x40050000
+1a000be4:	068e7780 	.word	0x068e7780
+1a000be8:	1a00128c 	.word	0x1a00128c
+
+1a000bec <Chip_GPIO_Init>:
+ ****************************************************************************/
+
+/* Initialize GPIO block */
+void Chip_GPIO_Init(LPC_GPIO_T *pGPIO)
+{
+}
+1a000bec:	4770      	bx	lr
+1a000bee:	Address 0x000000001a000bee is out of bounds.
+
+
+1a000bf0 <SystemCoreClockUpdate>:
+
+
+/* Update system core clock rate, should be called if the system has
+   a clock rate change */
+void SystemCoreClockUpdate(void)
+{
+1a000bf0:	b508      	push	{r3, lr}
+   /* CPU core speed */
+   SystemCoreClock = Chip_Clock_GetRate(CLK_MX_MXCORE);
+1a000bf2:	2069      	movs	r0, #105	; 0x69
+1a000bf4:	f7ff ff28 	bl	1a000a48 <Chip_Clock_GetRate>
+1a000bf8:	4b01      	ldr	r3, [pc, #4]	; (1a000c00 <SystemCoreClockUpdate+0x10>)
+1a000bfa:	6018      	str	r0, [r3, #0]
+}
+1a000bfc:	bd08      	pop	{r3, pc}
+1a000bfe:	bf00      	nop
+1a000c00:	10000010 	.word	0x10000010
+
+1a000c04 <fpuInit>:
+ * Public functions
+ ****************************************************************************/
+
+/* Early initialization of the FPU */
+void fpuInit(void)
+{
+1a000c04:	b084      	sub	sp, #16
+   volatile uint32_t Cpacr;
+   volatile uint32_t Mvfr0;
+   volatile uint32_t Mvfr1;
+   char vfpPresent = 0;
+
+   Mvfr0 = *regMvfr0;
+1a000c06:	4b0f      	ldr	r3, [pc, #60]	; (1a000c44 <fpuInit+0x40>)
+1a000c08:	681b      	ldr	r3, [r3, #0]
+1a000c0a:	9302      	str	r3, [sp, #8]
+   Mvfr1 = *regMvfr1;
+1a000c0c:	4b0e      	ldr	r3, [pc, #56]	; (1a000c48 <fpuInit+0x44>)
+1a000c0e:	681b      	ldr	r3, [r3, #0]
+1a000c10:	9301      	str	r3, [sp, #4]
+
+   vfpPresent = ((SCB_MVFR0_RESET == Mvfr0) && (SCB_MVFR1_RESET == Mvfr1));
+1a000c12:	9a02      	ldr	r2, [sp, #8]
+1a000c14:	4b0d      	ldr	r3, [pc, #52]	; (1a000c4c <fpuInit+0x48>)
+1a000c16:	429a      	cmp	r2, r3
+1a000c18:	d00c      	beq.n	1a000c34 <fpuInit+0x30>
+1a000c1a:	2300      	movs	r3, #0
+
+   if (vfpPresent) {
+1a000c1c:	b143      	cbz	r3, 1a000c30 <fpuInit+0x2c>
+       Cpacr = *regCpacr;
+1a000c1e:	4a0c      	ldr	r2, [pc, #48]	; (1a000c50 <fpuInit+0x4c>)
+1a000c20:	6813      	ldr	r3, [r2, #0]
+1a000c22:	9303      	str	r3, [sp, #12]
+       Cpacr |= (0xF << 20);
+1a000c24:	9b03      	ldr	r3, [sp, #12]
+1a000c26:	f443 0370 	orr.w	r3, r3, #15728640	; 0xf00000
+1a000c2a:	9303      	str	r3, [sp, #12]
+       *regCpacr = Cpacr;  // enable CP10 and CP11 for full access
+1a000c2c:	9b03      	ldr	r3, [sp, #12]
+1a000c2e:	6013      	str	r3, [r2, #0]
+   }
+#endif /* __FPU_PRESENT != 0 */
+}
+1a000c30:	b004      	add	sp, #16
+1a000c32:	4770      	bx	lr
+   vfpPresent = ((SCB_MVFR0_RESET == Mvfr0) && (SCB_MVFR1_RESET == Mvfr1));
+1a000c34:	9a01      	ldr	r2, [sp, #4]
+1a000c36:	4b07      	ldr	r3, [pc, #28]	; (1a000c54 <fpuInit+0x50>)
+1a000c38:	429a      	cmp	r2, r3
+1a000c3a:	d001      	beq.n	1a000c40 <fpuInit+0x3c>
+1a000c3c:	2300      	movs	r3, #0
+1a000c3e:	e7ed      	b.n	1a000c1c <fpuInit+0x18>
+1a000c40:	2301      	movs	r3, #1
+1a000c42:	e7eb      	b.n	1a000c1c <fpuInit+0x18>
+1a000c44:	e000ef40 	.word	0xe000ef40
+1a000c48:	e000ef44 	.word	0xe000ef44
+1a000c4c:	10110021 	.word	0x10110021
+1a000c50:	e000ed88 	.word	0xe000ed88
+1a000c54:	11000011 	.word	0x11000011
+
+1a000c58 <ResetISR>:
+void ResetISR(void) {
+1a000c58:	b510      	push	{r4, lr}
+    __asm volatile ("cpsid i");
+1a000c5a:	b672      	cpsid	i
+    *(RESET_CONTROL + 0) = 0x10DF1000;
+1a000c5c:	4b16      	ldr	r3, [pc, #88]	; (1a000cb8 <ResetISR+0x60>)
+1a000c5e:	4a17      	ldr	r2, [pc, #92]	; (1a000cbc <ResetISR+0x64>)
+1a000c60:	601a      	str	r2, [r3, #0]
+    *(RESET_CONTROL + 1) = 0x01DFF7FF;
+1a000c62:	3304      	adds	r3, #4
+1a000c64:	4a16      	ldr	r2, [pc, #88]	; (1a000cc0 <ResetISR+0x68>)
+1a000c66:	601a      	str	r2, [r3, #0]
+    for (irqpendloop = 0; irqpendloop < 8; irqpendloop++) {
+1a000c68:	2300      	movs	r3, #0
+1a000c6a:	e005      	b.n	1a000c78 <ResetISR+0x20>
+        *(NVIC_ICPR + irqpendloop) = 0xFFFFFFFF;
+1a000c6c:	4a15      	ldr	r2, [pc, #84]	; (1a000cc4 <ResetISR+0x6c>)
+1a000c6e:	f04f 31ff 	mov.w	r1, #4294967295	; 0xffffffff
+1a000c72:	f842 1023 	str.w	r1, [r2, r3, lsl #2]
+    for (irqpendloop = 0; irqpendloop < 8; irqpendloop++) {
+1a000c76:	3301      	adds	r3, #1
+1a000c78:	2b07      	cmp	r3, #7
+1a000c7a:	d9f7      	bls.n	1a000c6c <ResetISR+0x14>
+    __asm volatile ("cpsie i");
+1a000c7c:	b662      	cpsie	i
+    SystemInit();
+1a000c7e:	f000 f90b 	bl	1a000e98 <SystemInit>
+    SectionTableAddr = &__data_section_table;
+1a000c82:	4b11      	ldr	r3, [pc, #68]	; (1a000cc8 <ResetISR+0x70>)
+    while (SectionTableAddr < &__data_section_table_end) {
+1a000c84:	e007      	b.n	1a000c96 <ResetISR+0x3e>
+        SectionLen = *SectionTableAddr++;
+1a000c86:	f103 040c 	add.w	r4, r3, #12
+        data_init(LoadAddr, ExeAddr, SectionLen);
+1a000c8a:	689a      	ldr	r2, [r3, #8]
+1a000c8c:	6859      	ldr	r1, [r3, #4]
+1a000c8e:	6818      	ldr	r0, [r3, #0]
+1a000c90:	f7ff fa7c 	bl	1a00018c <data_init>
+        SectionLen = *SectionTableAddr++;
+1a000c94:	4623      	mov	r3, r4
+    while (SectionTableAddr < &__data_section_table_end) {
+1a000c96:	4a0d      	ldr	r2, [pc, #52]	; (1a000ccc <ResetISR+0x74>)
+1a000c98:	4293      	cmp	r3, r2
+1a000c9a:	d3f4      	bcc.n	1a000c86 <ResetISR+0x2e>
+1a000c9c:	e006      	b.n	1a000cac <ResetISR+0x54>
+        ExeAddr = *SectionTableAddr++;
+1a000c9e:	461c      	mov	r4, r3
+        bss_init(ExeAddr, SectionLen);
+1a000ca0:	6859      	ldr	r1, [r3, #4]
+1a000ca2:	f854 0b08 	ldr.w	r0, [r4], #8
+1a000ca6:	f7ff fa80 	bl	1a0001aa <bss_init>
+        SectionLen = *SectionTableAddr++;
+1a000caa:	4623      	mov	r3, r4
+    while (SectionTableAddr < &__bss_section_table_end) {
+1a000cac:	4a08      	ldr	r2, [pc, #32]	; (1a000cd0 <ResetISR+0x78>)
+1a000cae:	4293      	cmp	r3, r2
+1a000cb0:	d3f5      	bcc.n	1a000c9e <ResetISR+0x46>
+    main();
+1a000cb2:	f7ff fb2b 	bl	1a00030c <main>
+        ;
+1a000cb6:	e7fe      	b.n	1a000cb6 <ResetISR+0x5e>
+1a000cb8:	40053100 	.word	0x40053100
+1a000cbc:	10df1000 	.word	0x10df1000
+1a000cc0:	01dff7ff 	.word	0x01dff7ff
+1a000cc4:	e000e280 	.word	0xe000e280
+1a000cc8:	1a000114 	.word	0x1a000114
+1a000ccc:	1a000150 	.word	0x1a000150
+1a000cd0:	1a000178 	.word	0x1a000178
+
+1a000cd4 <Board_SetupMuxing>:
+ * @return Nothing
+ */
+STATIC INLINE void Chip_SCU_SetPinMuxing(const PINMUX_GRP_T *pinArray, uint32_t arrayLength)
+{
+   uint32_t ix;
+   for (ix = 0; ix < arrayLength; ix++ ) {
+1a000cd4:	2300      	movs	r3, #0
+1a000cd6:	2b17      	cmp	r3, #23
+1a000cd8:	d812      	bhi.n	1a000d00 <Board_SetupMuxing+0x2c>
+ * Public functions
+ ****************************************************************************/
+
+/* Sets up system pin muxing */
+void Board_SetupMuxing(void)
+{
+1a000cda:	b410      	push	{r4}
+       Chip_SCU_PinMuxSet(pinArray[ix].pingrp, pinArray[ix].pinnum, pinArray[ix].modefunc);
+1a000cdc:	4a09      	ldr	r2, [pc, #36]	; (1a000d04 <Board_SetupMuxing+0x30>)
+1a000cde:	eb02 0183 	add.w	r1, r2, r3, lsl #2
+1a000ce2:	f812 4023 	ldrb.w	r4, [r2, r3, lsl #2]
+1a000ce6:	784a      	ldrb	r2, [r1, #1]
+1a000ce8:	8848      	ldrh	r0, [r1, #2]
+   LPC_SCU->SFSP[port][pin] = modefunc;
+1a000cea:	eb02 1244 	add.w	r2, r2, r4, lsl #5
+1a000cee:	4906      	ldr	r1, [pc, #24]	; (1a000d08 <Board_SetupMuxing+0x34>)
+1a000cf0:	f841 0022 	str.w	r0, [r1, r2, lsl #2]
+   for (ix = 0; ix < arrayLength; ix++ ) {
+1a000cf4:	3301      	adds	r3, #1
+1a000cf6:	2b17      	cmp	r3, #23
+1a000cf8:	d9f0      	bls.n	1a000cdc <Board_SetupMuxing+0x8>
+   /* Setup system level pin muxing */
+   Chip_SCU_SetPinMuxing(pinmuxing, sizeof(pinmuxing) / sizeof(PINMUX_GRP_T));
+}
+1a000cfa:	f85d 4b04 	ldr.w	r4, [sp], #4
+1a000cfe:	4770      	bx	lr
+1a000d00:	4770      	bx	lr
+1a000d02:	bf00      	nop
+1a000d04:	1a0012e0 	.word	0x1a0012e0
+1a000d08:	40086000 	.word	0x40086000
+
+1a000d0c <Board_SetupClocking>:
+
+/* Set up and initialize clocking prior to call to main */
+void Board_SetupClocking(void)
+{
+1a000d0c:	b510      	push	{r4, lr}
+ */
+STATIC INLINE void Chip_CREG_SetFlashAcceleration(uint32_t Hz)
+{
+   uint32_t FAValue = Hz / 21510000;
+
+   LPC_CREG->FLASHCFGA = (LPC_CREG->FLASHCFGA & (~(0xF << 12))) | (FAValue << 12);
+1a000d0e:	4a17      	ldr	r2, [pc, #92]	; (1a000d6c <Board_SetupClocking+0x60>)
+1a000d10:	f8d2 3120 	ldr.w	r3, [r2, #288]	; 0x120
+1a000d14:	f423 4370 	bic.w	r3, r3, #61440	; 0xf000
+1a000d18:	f443 4310 	orr.w	r3, r3, #36864	; 0x9000
+1a000d1c:	f8c2 3120 	str.w	r3, [r2, #288]	; 0x120
+   LPC_CREG->FLASHCFGB = (LPC_CREG->FLASHCFGB & (~(0xF << 12))) | (FAValue << 12);
+1a000d20:	f8d2 3124 	ldr.w	r3, [r2, #292]	; 0x124
+1a000d24:	f423 4370 	bic.w	r3, r3, #61440	; 0xf000
+1a000d28:	f443 4310 	orr.w	r3, r3, #36864	; 0x9000
+1a000d2c:	f8c2 3124 	str.w	r3, [r2, #292]	; 0x124
+
+   /* Enable Flash acceleration and setup wait states */
+   Chip_CREG_SetFlashAcceleration(MAX_CLOCK_FREQ);
+
+   /* Setup System core frequency to MAX_CLOCK_FREQ */
+   Chip_SetupCoreClock(CLKIN_CRYSTAL, MAX_CLOCK_FREQ, true);
+1a000d30:	2201      	movs	r2, #1
+1a000d32:	490f      	ldr	r1, [pc, #60]	; (1a000d70 <Board_SetupClocking+0x64>)
+1a000d34:	2006      	movs	r0, #6
+1a000d36:	f7ff fead 	bl	1a000a94 <Chip_SetupCoreClock>
+
+   /* Setup system base clocks and initial states. This won't enable and
+      disable individual clocks, but sets up the base clock sources for
+      each individual peripheral clock. */
+   for (i = 0; i < (sizeof(InitClkStates) / sizeof(InitClkStates[0])); i++) {
+1a000d3a:	2400      	movs	r4, #0
+1a000d3c:	2c02      	cmp	r4, #2
+1a000d3e:	d80b      	bhi.n	1a000d58 <Board_SetupClocking+0x4c>
+       Chip_Clock_SetBaseClock(InitClkStates[i].clk, InitClkStates[i].clkin,
+1a000d40:	480c      	ldr	r0, [pc, #48]	; (1a000d74 <Board_SetupClocking+0x68>)
+1a000d42:	eb00 0184 	add.w	r1, r0, r4, lsl #2
+1a000d46:	78cb      	ldrb	r3, [r1, #3]
+1a000d48:	788a      	ldrb	r2, [r1, #2]
+1a000d4a:	7849      	ldrb	r1, [r1, #1]
+1a000d4c:	f810 0024 	ldrb.w	r0, [r0, r4, lsl #2]
+1a000d50:	f7ff fe16 	bl	1a000980 <Chip_Clock_SetBaseClock>
+   for (i = 0; i < (sizeof(InitClkStates) / sizeof(InitClkStates[0])); i++) {
+1a000d54:	3401      	adds	r4, #1
+1a000d56:	e7f1      	b.n	1a000d3c <Board_SetupClocking+0x30>
+                               InitClkStates[i].autoblock_enab, InitClkStates[i].powerdn);
+   }
+
+   /* Reset and enable 32Khz oscillator */
+   LPC_CREG->CREG0 &= ~((1 << 3) | (1 << 2));
+1a000d58:	4b04      	ldr	r3, [pc, #16]	; (1a000d6c <Board_SetupClocking+0x60>)
+1a000d5a:	685a      	ldr	r2, [r3, #4]
+1a000d5c:	f022 020c 	bic.w	r2, r2, #12
+1a000d60:	605a      	str	r2, [r3, #4]
+   LPC_CREG->CREG0 |= (1 << 1) | (1 << 0);
+1a000d62:	685a      	ldr	r2, [r3, #4]
+1a000d64:	f042 0203 	orr.w	r2, r2, #3
+1a000d68:	605a      	str	r2, [r3, #4]
+}
+1a000d6a:	bd10      	pop	{r4, pc}
+1a000d6c:	40043000 	.word	0x40043000
+1a000d70:	0c28cb00 	.word	0x0c28cb00
+1a000d74:	1a0012d4 	.word	0x1a0012d4
+
+1a000d78 <Board_SystemInit>:
+
+/* Set up and initialize hardware prior to call to main */
+void Board_SystemInit(void)
+{
+1a000d78:	b508      	push	{r3, lr}
+   /* Setup system clocking and memory. This is done early to allow the
+      application and tools to clear memory and use scatter loading to
+      external memory. */
+   Board_SetupMuxing();
+1a000d7a:	f7ff ffab 	bl	1a000cd4 <Board_SetupMuxing>
+   Board_SetupClocking();
+1a000d7e:	f7ff ffc5 	bl	1a000d0c <Board_SetupClocking>
+}
+1a000d82:	bd08      	pop	{r3, pc}
+
+1a000d84 <Board_LED_Init>:
+
+static void Board_LED_Init()
+{
+   uint32_t idx;
+
+   for (idx = 0; idx < (sizeof(gpioLEDBits) / sizeof(io_port_t)); ++idx) {
+1a000d84:	2200      	movs	r2, #0
+1a000d86:	2a05      	cmp	r2, #5
+1a000d88:	d819      	bhi.n	1a000dbe <Board_LED_Init+0x3a>
+{
+1a000d8a:	b470      	push	{r4, r5, r6}
+       /* Set pin direction and init to off */
+       Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, gpioLEDBits[idx].port, gpioLEDBits[idx].pin);
+1a000d8c:	490c      	ldr	r1, [pc, #48]	; (1a000dc0 <Board_LED_Init+0x3c>)
+1a000d8e:	f811 5012 	ldrb.w	r5, [r1, r2, lsl #1]
+1a000d92:	eb01 0142 	add.w	r1, r1, r2, lsl #1
+1a000d96:	784c      	ldrb	r4, [r1, #1]
+ * @param  pin     : GPIO pin to set direction on as output
+ * @return Nothing
+ */
+STATIC INLINE void Chip_GPIO_SetPinDIROutput(LPC_GPIO_T *pGPIO, uint8_t port, uint8_t pin)
+{
+   pGPIO->DIR[port] |= 1UL << pin;
+1a000d98:	4b0a      	ldr	r3, [pc, #40]	; (1a000dc4 <Board_LED_Init+0x40>)
+1a000d9a:	f505 6600 	add.w	r6, r5, #2048	; 0x800
+1a000d9e:	f853 1026 	ldr.w	r1, [r3, r6, lsl #2]
+1a000da2:	2001      	movs	r0, #1
+1a000da4:	40a0      	lsls	r0, r4
+1a000da6:	4301      	orrs	r1, r0
+1a000da8:	f843 1026 	str.w	r1, [r3, r6, lsl #2]
+   pGPIO->B[port][pin] = setting;
+1a000dac:	eb03 1345 	add.w	r3, r3, r5, lsl #5
+1a000db0:	2100      	movs	r1, #0
+1a000db2:	5519      	strb	r1, [r3, r4]
+   for (idx = 0; idx < (sizeof(gpioLEDBits) / sizeof(io_port_t)); ++idx) {
+1a000db4:	3201      	adds	r2, #1
+1a000db6:	2a05      	cmp	r2, #5
+1a000db8:	d9e8      	bls.n	1a000d8c <Board_LED_Init+0x8>
+       Chip_GPIO_SetPinState(LPC_GPIO_PORT, gpioLEDBits[idx].port, gpioLEDBits[idx].pin, (bool) false);
+   }
+}
+1a000dba:	bc70      	pop	{r4, r5, r6}
+1a000dbc:	4770      	bx	lr
+1a000dbe:	4770      	bx	lr
+1a000dc0:	1a001348 	.word	0x1a001348
+1a000dc4:	400f4000 	.word	0x400f4000
+
+1a000dc8 <Board_UART_Init>:
+   LPC_SCU->SFSP[port][pin] = modefunc;
+1a000dc8:	4b03      	ldr	r3, [pc, #12]	; (1a000dd8 <Board_UART_Init+0x10>)
+1a000dca:	2212      	movs	r2, #18
+1a000dcc:	f8c3 2310 	str.w	r2, [r3, #784]	; 0x310
+1a000dd0:	22d1      	movs	r2, #209	; 0xd1
+1a000dd2:	f8c3 2104 	str.w	r2, [r3, #260]	; 0x104
+}
+1a000dd6:	4770      	bx	lr
+1a000dd8:	40086000 	.word	0x40086000
+
+1a000ddc <Board_Debug_Init>:
+{
+1a000ddc:	b510      	push	{r4, lr}
+   Board_UART_Init(DEBUG_UART);
+1a000dde:	4c08      	ldr	r4, [pc, #32]	; (1a000e00 <Board_Debug_Init+0x24>)
+1a000de0:	4620      	mov	r0, r4
+1a000de2:	f7ff fff1 	bl	1a000dc8 <Board_UART_Init>
+   Chip_UART_Init(DEBUG_UART);
+1a000de6:	4620      	mov	r0, r4
+1a000de8:	f7ff fb16 	bl	1a000418 <Chip_UART_Init>
+   Chip_UART_SetBaudFDR(DEBUG_UART, 115200);
+1a000dec:	f44f 31e1 	mov.w	r1, #115200	; 0x1c200
+1a000df0:	4620      	mov	r0, r4
+1a000df2:	f7ff fb3b 	bl	1a00046c <Chip_UART_SetBaudFDR>
+   pUART->LCR = config;
+1a000df6:	2303      	movs	r3, #3
+1a000df8:	60e3      	str	r3, [r4, #12]
+    pUART->TER2 = UART_TER2_TXEN;
+1a000dfa:	2301      	movs	r3, #1
+1a000dfc:	65e3      	str	r3, [r4, #92]	; 0x5c
+}
+1a000dfe:	bd10      	pop	{r4, pc}
+1a000e00:	400c1000 	.word	0x400c1000
+
+1a000e04 <Board_LED_Set>:
+
+void Board_LED_Set(uint8_t LEDNumber, bool On)
+{
+   if (LEDNumber < (sizeof(gpioLEDBits) / sizeof(io_port_t)))
+1a000e04:	2805      	cmp	r0, #5
+1a000e06:	d80d      	bhi.n	1a000e24 <Board_LED_Set+0x20>
+        Chip_GPIO_SetPinState(LPC_GPIO_PORT, gpioLEDBits[LEDNumber].port, gpioLEDBits[LEDNumber].pin, (bool) !On);
+1a000e08:	4a07      	ldr	r2, [pc, #28]	; (1a000e28 <Board_LED_Set+0x24>)
+1a000e0a:	f812 3010 	ldrb.w	r3, [r2, r0, lsl #1]
+1a000e0e:	eb02 0040 	add.w	r0, r2, r0, lsl #1
+1a000e12:	7842      	ldrb	r2, [r0, #1]
+1a000e14:	f081 0101 	eor.w	r1, r1, #1
+1a000e18:	015b      	lsls	r3, r3, #5
+1a000e1a:	f103 2340 	add.w	r3, r3, #1073758208	; 0x40004000
+1a000e1e:	f503 2370 	add.w	r3, r3, #983040	; 0xf0000
+1a000e22:	5499      	strb	r1, [r3, r2]
+}
+1a000e24:	4770      	bx	lr
+1a000e26:	bf00      	nop
+1a000e28:	1a001348 	.word	0x1a001348
+
+1a000e2c <Board_LED_Test>:
+
+bool Board_LED_Test(uint8_t LEDNumber)
+{
+   if (LEDNumber < (sizeof(gpioLEDBits) / sizeof(io_port_t)))
+1a000e2c:	2805      	cmp	r0, #5
+1a000e2e:	d901      	bls.n	1a000e34 <Board_LED_Test+0x8>
+       return (bool) !Chip_GPIO_GetPinState(LPC_GPIO_PORT, gpioLEDBits[LEDNumber].port, gpioLEDBits[LEDNumber].pin);
+
+   return false;
+1a000e30:	2000      	movs	r0, #0
+}
+1a000e32:	4770      	bx	lr
+       return (bool) !Chip_GPIO_GetPinState(LPC_GPIO_PORT, gpioLEDBits[LEDNumber].port, gpioLEDBits[LEDNumber].pin);
+1a000e34:	4a07      	ldr	r2, [pc, #28]	; (1a000e54 <Board_LED_Test+0x28>)
+1a000e36:	f812 3010 	ldrb.w	r3, [r2, r0, lsl #1]
+1a000e3a:	eb02 0040 	add.w	r0, r2, r0, lsl #1
+1a000e3e:	7842      	ldrb	r2, [r0, #1]
+   return (bool) pGPIO->B[port][pin];
+1a000e40:	015b      	lsls	r3, r3, #5
+1a000e42:	f103 2340 	add.w	r3, r3, #1073758208	; 0x40004000
+1a000e46:	f503 2370 	add.w	r3, r3, #983040	; 0xf0000
+1a000e4a:	5c98      	ldrb	r0, [r3, r2]
+1a000e4c:	fab0 f080 	clz	r0, r0
+1a000e50:	0940      	lsrs	r0, r0, #5
+1a000e52:	4770      	bx	lr
+1a000e54:	1a001348 	.word	0x1a001348
+
+1a000e58 <Board_LED_Toggle>:
+
+void Board_LED_Toggle(uint8_t LEDNumber)
+{
+1a000e58:	b510      	push	{r4, lr}
+1a000e5a:	4604      	mov	r4, r0
+   Board_LED_Set(LEDNumber, !Board_LED_Test(LEDNumber));
+1a000e5c:	f7ff ffe6 	bl	1a000e2c <Board_LED_Test>
+1a000e60:	f080 0101 	eor.w	r1, r0, #1
+1a000e64:	b2c9      	uxtb	r1, r1
+1a000e66:	4620      	mov	r0, r4
+1a000e68:	f7ff ffcc 	bl	1a000e04 <Board_LED_Set>
+}
+1a000e6c:	bd10      	pop	{r4, pc}
+1a000e6e:	Address 0x000000001a000e6e is out of bounds.
+
+
+1a000e70 <Board_Init>:
+}
+
+/* Set up and initialize all required blocks and functions related to the
+   board hardware */
+void Board_Init(void)
+{
+1a000e70:	b508      	push	{r3, lr}
+   /* Sets up DEBUG UART */
+   DEBUGINIT();
+1a000e72:	f7ff ffb3 	bl	1a000ddc <Board_Debug_Init>
+
+   /* Initializes GPIO */
+   Chip_GPIO_Init(LPC_GPIO_PORT);
+1a000e76:	4806      	ldr	r0, [pc, #24]	; (1a000e90 <Board_Init+0x20>)
+1a000e78:	f7ff feb8 	bl	1a000bec <Chip_GPIO_Init>
+
+   /* Initialize LEDs */
+   Board_LED_Init();
+1a000e7c:	f7ff ff82 	bl	1a000d84 <Board_LED_Init>
+ * RMII PHY, and must be called before calling any Ethernet
+ * functions.
+ */
+STATIC INLINE void Chip_ENET_RMIIEnable(LPC_ENET_T *pENET)
+{
+   LPC_CREG->CREG6 |= 0x4;
+1a000e80:	4a04      	ldr	r2, [pc, #16]	; (1a000e94 <Board_Init+0x24>)
+1a000e82:	f8d2 312c 	ldr.w	r3, [r2, #300]	; 0x12c
+1a000e86:	f043 0304 	orr.w	r3, r3, #4
+1a000e8a:	f8c2 312c 	str.w	r3, [r2, #300]	; 0x12c
+   Chip_ENET_RMIIEnable(LPC_ETHERNET);
+}
+1a000e8e:	bd08      	pop	{r3, pc}
+1a000e90:	400f4000 	.word	0x400f4000
+1a000e94:	40043000 	.word	0x40043000
+
+1a000e98 <SystemInit>:
+ * Public functions
+ ****************************************************************************/
+
+/* Set up and initialize hardware prior to call to main */
+void SystemInit(void)
+{
+1a000e98:	b508      	push	{r3, lr}
+
+   *pSCB_VTOR = (unsigned int) &__Vectors;
+#endif
+
+#if defined(__FPU_PRESENT) && __FPU_PRESENT == 1
+   fpuInit();
+1a000e9a:	f7ff feb3 	bl	1a000c04 <fpuInit>
+#if defined(NO_BOARD_LIB)
+   /* Chip specific SystemInit */
+   Chip_SystemInit();
+#else
+   /* Board specific SystemInit */
+   Board_SystemInit();
+1a000e9e:	f7ff ff6b 	bl	1a000d78 <Board_SystemInit>
+#endif
+
+#endif /* defined(CORE_M3) || defined(CORE_M4) */
+}
+1a000ea2:	bd08      	pop	{r3, pc}
+
+1a000ea4 <avgWindowSIMD>:
+ *
+*/
+
+avgWindowSIMD:
+
+	push {lr}
+1a000ea4:	b500      	push	{lr}
+
+
+
+	pop {pc}
+1a000ea6:	bd00      	pop	{pc}
+
+1a000ea8 <avgWindowAsm>:
+#define index_i 	r7
+#define index		r8
+#define accum		r9
+#define avg			r10
+
+	push {r4-r10,lr}
+1a000ea8:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+
+	LDRB index_i,=0
+1a000eac:	f04f 0700 	mov.w	r7, #0
+	LDR  index,[delta_samples]
+1a000eb0:	f8d3 8000 	ldr.w	r8, [r3]
+	LDR  accum,=0
+1a000eb4:	f04f 0900 	mov.w	r9, #0
+	LDR R5,=0
+1a000eb8:	f04f 0500 	mov.w	r5, #0
+	LDR R6,=0
+1a000ebc:	f04f 0600 	mov.w	r6, #0
+	ADD R5, delta_samples, n_samples
+1a000ec0:	eb03 0502 	add.w	r5, r3, r2
+	CMP R5,size
+1a000ec4:	428d      	cmp	r5, r1
+	IT GT //if(delta_samples+n_samples>size)
+1a000ec6:	bfc8      	it	gt
+	BGT Exit
+1a000ec8:	e00e      	bgt.n	1a000ee8 <Exit>
+
+1a000eca <Loop_>:
+
+	Loop_:
+	ADD index, index_i, delta_samples
+1a000eca:	eb07 0803 	add.w	r8, r7, r3
+	LDRH R4, [func1, index, LSL 1]
+1a000ece:	f830 4018 	ldrh.w	r4, [r0, r8, lsl #1]
+	ADD accum, R4, accum
+1a000ed2:	44a1      	add	r9, r4
+	USAT accum, 31, accum
+1a000ed4:	f389 091f 	usat	r9, #31, r9
+	ADD index_i,1
+1a000ed8:	f107 0701 	add.w	r7, r7, #1
+	CMP index_i, n_samples
+1a000edc:	4297      	cmp	r7, r2
+	BNE Loop_
+1a000ede:	d1f4      	bne.n	1a000eca <Loop_>
+
+	UDIV R6, accum, n_samples
+1a000ee0:	fbb9 f6f2 	udiv	r6, r9, r2
+	USAT R6, 16, R6
+1a000ee4:	f386 0610 	usat	r6, #16, r6
+
+1a000ee8 <Exit>:
+
+	Exit:
+	MOV R0, R6
+1a000ee8:	4630      	mov	r0, r6
+	pop {r4-r10,pc}
+1a000eea:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+1a000eee:	Address 0x000000001a000eee is out of bounds.
+
+
+1a000ef0 <__aeabi_uldivmod>:
+1a000ef0:	b953      	cbnz	r3, 1a000f08 <__aeabi_uldivmod+0x18>
+1a000ef2:	b94a      	cbnz	r2, 1a000f08 <__aeabi_uldivmod+0x18>
+1a000ef4:	2900      	cmp	r1, #0
+1a000ef6:	bf08      	it	eq
+1a000ef8:	2800      	cmpeq	r0, #0
+1a000efa:	bf1c      	itt	ne
+1a000efc:	f04f 31ff 	movne.w	r1, #4294967295	; 0xffffffff
+1a000f00:	f04f 30ff 	movne.w	r0, #4294967295	; 0xffffffff
+1a000f04:	f000 b974 	b.w	1a0011f0 <__aeabi_idiv0>
+1a000f08:	f1ad 0c08 	sub.w	ip, sp, #8
+1a000f0c:	e96d ce04 	strd	ip, lr, [sp, #-16]!
+1a000f10:	f000 f806 	bl	1a000f20 <__udivmoddi4>
+1a000f14:	f8dd e004 	ldr.w	lr, [sp, #4]
+1a000f18:	e9dd 2302 	ldrd	r2, r3, [sp, #8]
+1a000f1c:	b004      	add	sp, #16
+1a000f1e:	4770      	bx	lr
+
+1a000f20 <__udivmoddi4>:
+1a000f20:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+1a000f24:	9e08      	ldr	r6, [sp, #32]
+1a000f26:	4604      	mov	r4, r0
+1a000f28:	4688      	mov	r8, r1
+1a000f2a:	2b00      	cmp	r3, #0
+1a000f2c:	f040 8085 	bne.w	1a00103a <__udivmoddi4+0x11a>
+1a000f30:	428a      	cmp	r2, r1
+1a000f32:	4615      	mov	r5, r2
+1a000f34:	d948      	bls.n	1a000fc8 <__udivmoddi4+0xa8>
+1a000f36:	fab2 f282 	clz	r2, r2
+1a000f3a:	b14a      	cbz	r2, 1a000f50 <__udivmoddi4+0x30>
+1a000f3c:	f1c2 0720 	rsb	r7, r2, #32
+1a000f40:	fa01 f302 	lsl.w	r3, r1, r2
+1a000f44:	fa20 f707 	lsr.w	r7, r0, r7
+1a000f48:	4095      	lsls	r5, r2
+1a000f4a:	ea47 0803 	orr.w	r8, r7, r3
+1a000f4e:	4094      	lsls	r4, r2
+1a000f50:	ea4f 4e15 	mov.w	lr, r5, lsr #16
+1a000f54:	0c23      	lsrs	r3, r4, #16
+1a000f56:	fbb8 f7fe 	udiv	r7, r8, lr
+1a000f5a:	fa1f fc85 	uxth.w	ip, r5
+1a000f5e:	fb0e 8817 	mls	r8, lr, r7, r8
+1a000f62:	ea43 4308 	orr.w	r3, r3, r8, lsl #16
+1a000f66:	fb07 f10c 	mul.w	r1, r7, ip
+1a000f6a:	4299      	cmp	r1, r3
+1a000f6c:	d909      	bls.n	1a000f82 <__udivmoddi4+0x62>
+1a000f6e:	18eb      	adds	r3, r5, r3
+1a000f70:	f107 30ff 	add.w	r0, r7, #4294967295	; 0xffffffff
+1a000f74:	f080 80e3 	bcs.w	1a00113e <__udivmoddi4+0x21e>
+1a000f78:	4299      	cmp	r1, r3
+1a000f7a:	f240 80e0 	bls.w	1a00113e <__udivmoddi4+0x21e>
+1a000f7e:	3f02      	subs	r7, #2
+1a000f80:	442b      	add	r3, r5
+1a000f82:	1a5b      	subs	r3, r3, r1
+1a000f84:	b2a4      	uxth	r4, r4
+1a000f86:	fbb3 f0fe 	udiv	r0, r3, lr
+1a000f8a:	fb0e 3310 	mls	r3, lr, r0, r3
+1a000f8e:	ea44 4403 	orr.w	r4, r4, r3, lsl #16
+1a000f92:	fb00 fc0c 	mul.w	ip, r0, ip
+1a000f96:	45a4      	cmp	ip, r4
+1a000f98:	d909      	bls.n	1a000fae <__udivmoddi4+0x8e>
+1a000f9a:	192c      	adds	r4, r5, r4
+1a000f9c:	f100 33ff 	add.w	r3, r0, #4294967295	; 0xffffffff
+1a000fa0:	f080 80cb 	bcs.w	1a00113a <__udivmoddi4+0x21a>
+1a000fa4:	45a4      	cmp	ip, r4
+1a000fa6:	f240 80c8 	bls.w	1a00113a <__udivmoddi4+0x21a>
+1a000faa:	3802      	subs	r0, #2
+1a000fac:	442c      	add	r4, r5
+1a000fae:	ea40 4007 	orr.w	r0, r0, r7, lsl #16
+1a000fb2:	eba4 040c 	sub.w	r4, r4, ip
+1a000fb6:	2700      	movs	r7, #0
+1a000fb8:	b11e      	cbz	r6, 1a000fc2 <__udivmoddi4+0xa2>
+1a000fba:	40d4      	lsrs	r4, r2
+1a000fbc:	2300      	movs	r3, #0
+1a000fbe:	e9c6 4300 	strd	r4, r3, [r6]
+1a000fc2:	4639      	mov	r1, r7
+1a000fc4:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+1a000fc8:	2a00      	cmp	r2, #0
+1a000fca:	d053      	beq.n	1a001074 <__udivmoddi4+0x154>
+1a000fcc:	fab2 f282 	clz	r2, r2
+1a000fd0:	2a00      	cmp	r2, #0
+1a000fd2:	f040 80b6 	bne.w	1a001142 <__udivmoddi4+0x222>
+1a000fd6:	1b49      	subs	r1, r1, r5
+1a000fd8:	ea4f 4e15 	mov.w	lr, r5, lsr #16
+1a000fdc:	fa1f f885 	uxth.w	r8, r5
+1a000fe0:	2701      	movs	r7, #1
+1a000fe2:	fbb1 fcfe 	udiv	ip, r1, lr
+1a000fe6:	0c23      	lsrs	r3, r4, #16
+1a000fe8:	fb0e 111c 	mls	r1, lr, ip, r1
+1a000fec:	ea43 4301 	orr.w	r3, r3, r1, lsl #16
+1a000ff0:	fb08 f10c 	mul.w	r1, r8, ip
+1a000ff4:	4299      	cmp	r1, r3
+1a000ff6:	d907      	bls.n	1a001008 <__udivmoddi4+0xe8>
+1a000ff8:	18eb      	adds	r3, r5, r3
+1a000ffa:	f10c 30ff 	add.w	r0, ip, #4294967295	; 0xffffffff
+1a000ffe:	d202      	bcs.n	1a001006 <__udivmoddi4+0xe6>
+1a001000:	4299      	cmp	r1, r3
+1a001002:	f200 80ec 	bhi.w	1a0011de <__udivmoddi4+0x2be>
+1a001006:	4684      	mov	ip, r0
+1a001008:	1a59      	subs	r1, r3, r1
+1a00100a:	b2a3      	uxth	r3, r4
+1a00100c:	fbb1 f0fe 	udiv	r0, r1, lr
+1a001010:	fb0e 1410 	mls	r4, lr, r0, r1
+1a001014:	ea43 4404 	orr.w	r4, r3, r4, lsl #16
+1a001018:	fb08 f800 	mul.w	r8, r8, r0
+1a00101c:	45a0      	cmp	r8, r4
+1a00101e:	d907      	bls.n	1a001030 <__udivmoddi4+0x110>
+1a001020:	192c      	adds	r4, r5, r4
+1a001022:	f100 33ff 	add.w	r3, r0, #4294967295	; 0xffffffff
+1a001026:	d202      	bcs.n	1a00102e <__udivmoddi4+0x10e>
+1a001028:	45a0      	cmp	r8, r4
+1a00102a:	f200 80dc 	bhi.w	1a0011e6 <__udivmoddi4+0x2c6>
+1a00102e:	4618      	mov	r0, r3
+1a001030:	eba4 0408 	sub.w	r4, r4, r8
+1a001034:	ea40 400c 	orr.w	r0, r0, ip, lsl #16
+1a001038:	e7be      	b.n	1a000fb8 <__udivmoddi4+0x98>
+1a00103a:	428b      	cmp	r3, r1
+1a00103c:	d908      	bls.n	1a001050 <__udivmoddi4+0x130>
+1a00103e:	2e00      	cmp	r6, #0
+1a001040:	d078      	beq.n	1a001134 <__udivmoddi4+0x214>
+1a001042:	2700      	movs	r7, #0
+1a001044:	e9c6 0100 	strd	r0, r1, [r6]
+1a001048:	4638      	mov	r0, r7
+1a00104a:	4639      	mov	r1, r7
+1a00104c:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+1a001050:	fab3 f783 	clz	r7, r3
+1a001054:	b97f      	cbnz	r7, 1a001076 <__udivmoddi4+0x156>
+1a001056:	428b      	cmp	r3, r1
+1a001058:	d302      	bcc.n	1a001060 <__udivmoddi4+0x140>
+1a00105a:	4282      	cmp	r2, r0
+1a00105c:	f200 80bd 	bhi.w	1a0011da <__udivmoddi4+0x2ba>
+1a001060:	1a84      	subs	r4, r0, r2
+1a001062:	eb61 0303 	sbc.w	r3, r1, r3
+1a001066:	2001      	movs	r0, #1
+1a001068:	4698      	mov	r8, r3
+1a00106a:	2e00      	cmp	r6, #0
+1a00106c:	d0a9      	beq.n	1a000fc2 <__udivmoddi4+0xa2>
+1a00106e:	e9c6 4800 	strd	r4, r8, [r6]
+1a001072:	e7a6      	b.n	1a000fc2 <__udivmoddi4+0xa2>
+1a001074:	deff      	udf	#255	; 0xff
+1a001076:	f1c7 0520 	rsb	r5, r7, #32
+1a00107a:	40bb      	lsls	r3, r7
+1a00107c:	fa22 fc05 	lsr.w	ip, r2, r5
+1a001080:	ea4c 0c03 	orr.w	ip, ip, r3
+1a001084:	fa01 f407 	lsl.w	r4, r1, r7
+1a001088:	fa20 f805 	lsr.w	r8, r0, r5
+1a00108c:	fa21 f305 	lsr.w	r3, r1, r5
+1a001090:	ea4f 4e1c 	mov.w	lr, ip, lsr #16
+1a001094:	ea48 0404 	orr.w	r4, r8, r4
+1a001098:	fbb3 f9fe 	udiv	r9, r3, lr
+1a00109c:	0c21      	lsrs	r1, r4, #16
+1a00109e:	fb0e 3319 	mls	r3, lr, r9, r3
+1a0010a2:	fa1f f88c 	uxth.w	r8, ip
+1a0010a6:	ea41 4303 	orr.w	r3, r1, r3, lsl #16
+1a0010aa:	fb09 fa08 	mul.w	sl, r9, r8
+1a0010ae:	459a      	cmp	sl, r3
+1a0010b0:	fa02 f207 	lsl.w	r2, r2, r7
+1a0010b4:	fa00 f107 	lsl.w	r1, r0, r7
+1a0010b8:	d90b      	bls.n	1a0010d2 <__udivmoddi4+0x1b2>
+1a0010ba:	eb1c 0303 	adds.w	r3, ip, r3
+1a0010be:	f109 30ff 	add.w	r0, r9, #4294967295	; 0xffffffff
+1a0010c2:	f080 8088 	bcs.w	1a0011d6 <__udivmoddi4+0x2b6>
+1a0010c6:	459a      	cmp	sl, r3
+1a0010c8:	f240 8085 	bls.w	1a0011d6 <__udivmoddi4+0x2b6>
+1a0010cc:	f1a9 0902 	sub.w	r9, r9, #2
+1a0010d0:	4463      	add	r3, ip
+1a0010d2:	eba3 030a 	sub.w	r3, r3, sl
+1a0010d6:	b2a4      	uxth	r4, r4
+1a0010d8:	fbb3 f0fe 	udiv	r0, r3, lr
+1a0010dc:	fb0e 3310 	mls	r3, lr, r0, r3
+1a0010e0:	ea44 4403 	orr.w	r4, r4, r3, lsl #16
+1a0010e4:	fb00 f808 	mul.w	r8, r0, r8
+1a0010e8:	45a0      	cmp	r8, r4
+1a0010ea:	d908      	bls.n	1a0010fe <__udivmoddi4+0x1de>
+1a0010ec:	eb1c 0404 	adds.w	r4, ip, r4
+1a0010f0:	f100 33ff 	add.w	r3, r0, #4294967295	; 0xffffffff
+1a0010f4:	d26b      	bcs.n	1a0011ce <__udivmoddi4+0x2ae>
+1a0010f6:	45a0      	cmp	r8, r4
+1a0010f8:	d969      	bls.n	1a0011ce <__udivmoddi4+0x2ae>
+1a0010fa:	3802      	subs	r0, #2
+1a0010fc:	4464      	add	r4, ip
+1a0010fe:	ea40 4009 	orr.w	r0, r0, r9, lsl #16
+1a001102:	eba4 0408 	sub.w	r4, r4, r8
+1a001106:	fba0 8902 	umull	r8, r9, r0, r2
+1a00110a:	454c      	cmp	r4, r9
+1a00110c:	46c6      	mov	lr, r8
+1a00110e:	464b      	mov	r3, r9
+1a001110:	d354      	bcc.n	1a0011bc <__udivmoddi4+0x29c>
+1a001112:	d051      	beq.n	1a0011b8 <__udivmoddi4+0x298>
+1a001114:	2e00      	cmp	r6, #0
+1a001116:	d069      	beq.n	1a0011ec <__udivmoddi4+0x2cc>
+1a001118:	ebb1 020e 	subs.w	r2, r1, lr
+1a00111c:	eb64 0403 	sbc.w	r4, r4, r3
+1a001120:	fa04 f505 	lsl.w	r5, r4, r5
+1a001124:	fa22 f307 	lsr.w	r3, r2, r7
+1a001128:	40fc      	lsrs	r4, r7
+1a00112a:	431d      	orrs	r5, r3
+1a00112c:	e9c6 5400 	strd	r5, r4, [r6]
+1a001130:	2700      	movs	r7, #0
+1a001132:	e746      	b.n	1a000fc2 <__udivmoddi4+0xa2>
+1a001134:	4637      	mov	r7, r6
+1a001136:	4630      	mov	r0, r6
+1a001138:	e743      	b.n	1a000fc2 <__udivmoddi4+0xa2>
+1a00113a:	4618      	mov	r0, r3
+1a00113c:	e737      	b.n	1a000fae <__udivmoddi4+0x8e>
+1a00113e:	4607      	mov	r7, r0
+1a001140:	e71f      	b.n	1a000f82 <__udivmoddi4+0x62>
+1a001142:	f1c2 0320 	rsb	r3, r2, #32
+1a001146:	fa20 f703 	lsr.w	r7, r0, r3
+1a00114a:	4095      	lsls	r5, r2
+1a00114c:	fa01 f002 	lsl.w	r0, r1, r2
+1a001150:	fa21 f303 	lsr.w	r3, r1, r3
+1a001154:	ea4f 4e15 	mov.w	lr, r5, lsr #16
+1a001158:	4338      	orrs	r0, r7
+1a00115a:	0c01      	lsrs	r1, r0, #16
+1a00115c:	fbb3 f7fe 	udiv	r7, r3, lr
+1a001160:	fa1f f885 	uxth.w	r8, r5
+1a001164:	fb0e 3317 	mls	r3, lr, r7, r3
+1a001168:	ea41 4103 	orr.w	r1, r1, r3, lsl #16
+1a00116c:	fb07 f308 	mul.w	r3, r7, r8
+1a001170:	428b      	cmp	r3, r1
+1a001172:	fa04 f402 	lsl.w	r4, r4, r2
+1a001176:	d907      	bls.n	1a001188 <__udivmoddi4+0x268>
+1a001178:	1869      	adds	r1, r5, r1
+1a00117a:	f107 3cff 	add.w	ip, r7, #4294967295	; 0xffffffff
+1a00117e:	d228      	bcs.n	1a0011d2 <__udivmoddi4+0x2b2>
+1a001180:	428b      	cmp	r3, r1
+1a001182:	d926      	bls.n	1a0011d2 <__udivmoddi4+0x2b2>
+1a001184:	3f02      	subs	r7, #2
+1a001186:	4429      	add	r1, r5
+1a001188:	1acb      	subs	r3, r1, r3
+1a00118a:	b281      	uxth	r1, r0
+1a00118c:	fbb3 f0fe 	udiv	r0, r3, lr
+1a001190:	fb0e 3310 	mls	r3, lr, r0, r3
+1a001194:	ea41 4103 	orr.w	r1, r1, r3, lsl #16
+1a001198:	fb00 f308 	mul.w	r3, r0, r8
+1a00119c:	428b      	cmp	r3, r1
+1a00119e:	d907      	bls.n	1a0011b0 <__udivmoddi4+0x290>
+1a0011a0:	1869      	adds	r1, r5, r1
+1a0011a2:	f100 3cff 	add.w	ip, r0, #4294967295	; 0xffffffff
+1a0011a6:	d210      	bcs.n	1a0011ca <__udivmoddi4+0x2aa>
+1a0011a8:	428b      	cmp	r3, r1
+1a0011aa:	d90e      	bls.n	1a0011ca <__udivmoddi4+0x2aa>
+1a0011ac:	3802      	subs	r0, #2
+1a0011ae:	4429      	add	r1, r5
+1a0011b0:	1ac9      	subs	r1, r1, r3
+1a0011b2:	ea40 4707 	orr.w	r7, r0, r7, lsl #16
+1a0011b6:	e714      	b.n	1a000fe2 <__udivmoddi4+0xc2>
+1a0011b8:	4541      	cmp	r1, r8
+1a0011ba:	d2ab      	bcs.n	1a001114 <__udivmoddi4+0x1f4>
+1a0011bc:	ebb8 0e02 	subs.w	lr, r8, r2
+1a0011c0:	eb69 020c 	sbc.w	r2, r9, ip
+1a0011c4:	3801      	subs	r0, #1
+1a0011c6:	4613      	mov	r3, r2
+1a0011c8:	e7a4      	b.n	1a001114 <__udivmoddi4+0x1f4>
+1a0011ca:	4660      	mov	r0, ip
+1a0011cc:	e7f0      	b.n	1a0011b0 <__udivmoddi4+0x290>
+1a0011ce:	4618      	mov	r0, r3
+1a0011d0:	e795      	b.n	1a0010fe <__udivmoddi4+0x1de>
+1a0011d2:	4667      	mov	r7, ip
+1a0011d4:	e7d8      	b.n	1a001188 <__udivmoddi4+0x268>
+1a0011d6:	4681      	mov	r9, r0
+1a0011d8:	e77b      	b.n	1a0010d2 <__udivmoddi4+0x1b2>
+1a0011da:	4638      	mov	r0, r7
+1a0011dc:	e745      	b.n	1a00106a <__udivmoddi4+0x14a>
+1a0011de:	f1ac 0c02 	sub.w	ip, ip, #2
+1a0011e2:	442b      	add	r3, r5
+1a0011e4:	e710      	b.n	1a001008 <__udivmoddi4+0xe8>
+1a0011e6:	3802      	subs	r0, #2
+1a0011e8:	442c      	add	r4, r5
+1a0011ea:	e721      	b.n	1a001030 <__udivmoddi4+0x110>
+1a0011ec:	4637      	mov	r7, r6
+1a0011ee:	e6e8      	b.n	1a000fc2 <__udivmoddi4+0xa2>
+
+1a0011f0 <__aeabi_idiv0>:
+1a0011f0:	4770      	bx	lr
+1a0011f2:	bf00      	nop
+
+1a0011f4 <memset>:
+1a0011f4:	4402      	add	r2, r0
+1a0011f6:	4603      	mov	r3, r0
+1a0011f8:	4293      	cmp	r3, r2
+1a0011fa:	d100      	bne.n	1a0011fe <memset+0xa>
+1a0011fc:	4770      	bx	lr
+1a0011fe:	f803 1b01 	strb.w	r1, [r3], #1
+1a001202:	e7f9      	b.n	1a0011f8 <memset+0x4>
+
+1a001204 <UART_BClock>:
+1a001204:	01c2 01a2 0182 0162                         ......b.
+
+1a00120c <UART_PClock>:
+1a00120c:	0081 0082 00a1 00a2 0201 0804 0f03 0f0f     ................
+1a00121c:	00ff 0000                                   ....
+
+1a001220 <periph_to_base>:
+1a001220:	0000 0005 000a 0020 0024 0009 0040 0040     ...... .$...@.@.
+1a001230:	0005 0060 00a6 0004 00c0 00c3 0002 00e0     ..`.............
+1a001240:	00e0 0001 0100 0100 0003 0120 0120 0006     .......... . ...
+1a001250:	0140 0140 000c 0142 0142 0019 0162 0162     @.@...B.B...b.b.
+1a001260:	0013 0182 0182 0012 01a2 01a2 0011 01c2     ................
+1a001270:	01c2 0010 01e2 01e2 000f 0202 0202 000e     ................
+1a001280:	0222 0222 000d 0223 0223 001c               "."...#.#...
+
+1a00128c <InitClkStates>:
+1a00128c:	0100 0001 0909 0001 090a 0001 0701 0101     ................
+1a00129c:	0902 0001 0906 0001 090c 0101 090d 0001     ................
+1a0012ac:	090e 0001 090f 0001 0910 0001 0911 0001     ................
+1a0012bc:	0912 0001 0913 0001 1114 0001 1119 0001     ................
+1a0012cc:	111a 0001 111b 0001                         ........
+
+1a0012d4 <InitClkStates>:
+1a0012d4:	0308 0001 0307 0001 0f01 0101               ............
+
+1a0012e0 <pinmuxing>:
+1a0012e0:	0a02 0040 0b02 0040 0c02 0040 0002 0044     ..@...@...@...D.
+1a0012f0:	0102 0044 0202 0044 0302 0052 0402 0052     ..D...D...R...R.
+1a001300:	0509 0052 0609 0057 0206 0057 0001 0050     ..R...W...W...P.
+1a001310:	0101 0050 0201 0050 0601 0050 0f01 00f3     ..P...P...P.....
+1a001320:	1001 00f7 1101 00f3 1201 00b3 1301 00f0     ................
+1a001330:	1401 00b3 0707 00b6 0000 00f2 0100 00b6     ................
+
+1a001340 <ExtRateIn>:
+1a001340:	0000 0000                                   ....
+
+1a001344 <OscRateIn>:
+1a001344:	1b00 00b7                                   ....
+
+1a001348 <gpioLEDBits>:
+1a001348:	0e00 0b01 0c01 0005 0105 0205               ............
